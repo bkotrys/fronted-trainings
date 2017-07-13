@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Forms trainings</h1>
+		<button id="info-btn" title="Help">?</button>
+	</header>
+	<main>
+		<form id="register-form">
+			<fieldset>
+				<legend>Personal Data</legend>
+				<section class="input-set triple-set">
+					<div class="input-wrapper">
+						<label for="name">Name</label>
+						<input type="text" name="name"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="surname">Surname</label>
+						<input type="text" name="surname"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="birth">Birth</label>
+						<input type="date" name="date"/>
+					</div>
+				</section>
+				<section class="input-set triple-set">
+					<div class="input-wrapper">
+						<label for="street">Street</label>
+						<input type="text" name="street"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="town">Town</label>
+						<input type="text" name="town"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="country">Country</label>
+						<select name="country">
+							<option value="pl">Poland</option>
+							<option value="ge">Germany</option>
+							<option value="gb">Great Britain</option>
+						</select>
+					</div>
+				</section>
+				<section class="input-set triple-set">
+					<div class="input-wrapper">
+						<label for="age">Age</label>
+						<input type="number" name="age"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="phone">Phone</label>
+						<input type="text" name="phone"/>
+					</div>
+				</section>
+			</fieldset>
+			<fieldset>
+				<legend>Password</legend>
+				<section class="input-set double-set">
+					<div class="input-wrapper">
+						<label for="password">Password</label>
+						<input type="password" name="password"/>
+					</div>
+					<div class="input-wrapper">
+						<label for="retry-password">Retry password</label>
+						<input type="password" name="retry-password"/>
+					</div>
+				</section>
+			</fieldset>
+			<fieldset>
+				<legend>Others</legend>
+				<section class="input-set double-set">
+					<div class="choices-wrapper">
+						<span>Sport</span>
+						<ul class="choices-list double-set">
+							<li>
+								<label><input type="checkbox"/>Football</label>
+							</li>
+							<li>
+								<label><input type="checkbox" disabled/>Basketball</label>
+							</li>
+							<li>
+								<label><input type="checkbox"/>Swimming</label>
+							</li>
+							<li>
+								<label><input type="checkbox" checked/>Tenis</label>
+							</li>
+							<li>
+								<label><input type="checkbox" checked/>Gym</label>
+							</li>
+							<li>
+								<label><input type="checkbox" disabled/>Running</label>
+							</li>
+						</ul>
+					</div>
+					<div class="choices-wrapper">
+						<span>Gender</span>
+						<ul class="choices-list single-set">
+							<li>
+								<label><input type="radio" name="gender" checked/>Male</label>
+							</li>
+							<li>
+								<label><input type="radio" name="gender"/>Female</label>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</fieldset>
+			<button id="submit-btn" type="submit" form="register-form">Submit</button>
+		</form>
+	</main>
+</body>
+</html>
