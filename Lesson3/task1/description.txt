@@ -1,0 +1,36 @@
+Lesson 3 > task 1 > description
+
+In this task as root project use example/ from Lesson2/task2. 
+Copy this folder and work on it.
+The task concerns on form's fields validation and some other stuff. 
+HTML5 have native attributes which validate fields after submit form (Click on button submit in this case).
+Use only HTML and CSS.
+
+// Index.html - Form page
+
+1. Inputs 'Name', 'Surname', 'Age', 'Birth', 'Password' and 'Retry password' must be required.
+2. Phone should have 9 characters. No less no more.
+3. Add placeholder text for 'Name' input - "First Name". 
+4. Town should have default value - "Wroclaw"
+5. Date - min value should be '1990-12-20' and max should be '2000-01-12';
+6. Add new fieldset section Additional Data (the same as 'advanced-form-mockup.png'). There are 3 input fields:
+   - 'email' input with placeholder - "Apply E-mail..."
+   - 'select image' input which allow user to apply files to form
+   - 'summary' input which allow user to apply some text. This field should have max 100 characters.
+7. Add new "Reset" button in the same level as "Submit" button. The button should be aligned to left side and have the same styles
+   When user click on the button, all form's fields should be reset - form should be in the same state as on the begining.
+8. Help button (yellow) - should move user to another page - /help. Create new html file and look at 'help-mockup.png'.
+
+// Help.html - Help page
+
+Use flexbox for positioning of elements!
+
+1. Help page has header
+2. Under header are 4 blocks in one line. Try to map mocku one to one. Pay attention on paddings, colors and alignment of elements.
+3. First blue block isn't input it is normal block with text. Block should have 100px height and 50% width. No less no more!
+   Add very long text inside this block, so that it does not fit inside. With css make text elipssis = in result you should have '...' on the end of block.
+4. Green blocks are the same.
+5. Try to make similar element as black-white element. TIP: try to create 4 triangle with html/css.
+6. Under this section is image section. There is "Help image" text which is centrally centered to the image 
+7. Apply image to the site - no matter what, choose something from internet.
+8. Back button should move to Index.html.
