@@ -1,0 +1,30 @@
+body, 
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.box-container {
+	height: 300px;
+}
+
+.box {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    border: 5px solid #444;
+    box-sizing: border-box;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+/* ID ma większą wagę, więc nadpisuje class -> materials.txt - artykuły */
+#unique-box {
+	background: #934245;
+	border-color: #08ff00;
+}
+
+.dark {
+	background: #000000;
+}

@@ -1,0 +1,24 @@
+Specyfikacja:
+1. HTML - https://www.w3schools.com/html/html_intro.asp
+2. CSS  - https://www.w3schools.com/css/css3_intro.asp
+3. Javascript - https://www.w3schools.com/Js/
+
+Artykuły:
+a) HTML:
+- Różnica między klasą a id - https://css-tricks.com/the-difference-between-id-and-class/
+
+b) CSS:
+- Waga selektorów CSS - https://blog.strefakursow.pl/specyfikacja-selektorow-css/
+
+Tutoriale HTML i CSS:
+1. PL - Książka, w której gościu na prawdę bardzo fajnie tłumaczy podstawy. 
+http://ferrante.pl/books/html/
+
+2. PL - Tutoriale video:
+https://www.youtube.com/watch?v=LqvFIuVlyP8&list=PL41lfR-6DnOruqMacTfff1zrEcqtmm7Fv
+
+3. ENG - Tutorial raczej dla utrwalenia tego co wyżej przyswoisz:
+http://websitesetup.org/html-beginners-guide/
+
+4. ENG - Tutorial w którym piszesz kod, też dla utrwalenia, bardzo fajne zadanka
+https://www.codecademy.com/courses/learn-html-css/lessons/structure/exercises/what-is-html?action=lesson_resume

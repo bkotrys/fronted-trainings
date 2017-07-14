@@ -1,0 +1,13 @@
+﻿GIT - https://git-scm.com/download/win
+
+jsfiddle.net - interaktywny edytor
+stackoverflow.com - rozwiązywanie problemów programistów
+
+
+SUBLIMETEXT:
+- source - https://www.sublimetext.com/3
+- packages:
+ a) http://weslly.github.io/ColorPicker/
+ b) https://github.com/sindresorhus/sublime-autoprefixer
+ c) https://packagecontrol.io/packages/HTML5
+ d) https://sublimegit.readthedocs.io/en/latest//tutorial.html 

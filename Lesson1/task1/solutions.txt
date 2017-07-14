@@ -1,0 +1,4 @@
+Dlaczego był problem z ustawieniem w jednej lini elementów mimo, że mamy 50% i 50%.
+Problem jest związany z natywną obsługą własności css dla inline-block. Przeglądarka dodaje "niewidoczne" odstępy. To nie jedyny wyjątek, ale reszta później :)
+Opis problemu + rozwiązania:
+- https://css-tricks.com/fighting-the-space-between-inline-block-elements/

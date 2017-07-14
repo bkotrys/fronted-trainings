@@ -1,0 +1,17 @@
+// CSS positioning
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+http://the-echoplex.net/flexyboxes/
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+// CSS Z-index
+https://css-tricks.com/almanac/properties/z/z-index/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+
+// GIT - static tutorials
+https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start
+https://www.edureka.co/blog/git-tutorial/
+
+// GIT - interactive tutorials
+https://www.codecademy.com/learn/learn-git
+http://learngitbranching.js.org/
