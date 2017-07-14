@@ -1,0 +1,70 @@
+.MainDiv {
+	width: 100%;
+	height: 500px;
+	/*
+	border-style: solid;
+	border-color: black;
+	background-color: grey;
+	*/
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#Block1 {
+	/* Blok niebieski */
+	width: 45%;
+	height: 25%;
+	background-color: #3c57c4;
+	position: absolute;
+	left: 30px;
+	top: 100px;
+	z-index: 1;
+	border: solid black 3px;
+
+}
+
+#Block2 {
+	/* Blok bordowy */
+	width: 30%;
+	height: 40%;
+	background-color: #8c2e5a;
+	position: absolute;
+	left: 70px;
+	top: 70px;
+	z-index: 3;
+	border: dashed black 3px;
+}
+
+#Block3 {
+	/* Blok czarny */
+	width: 30%;
+	height: 40%;
+	background-color: black;
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	z-index: 2;
+}
+
+#Block4 {
+	/* Blok zielony */
+	width: 30%;
+	height: 40%;
+	background-color: #2a6d32;
+	opacity: 0.5;
+	position: absolute;
+	left: 180px;
+	top: 180px;
+	z-index: 4;
+}
+
+p {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+    position: absolute;
+    left: 410px;
+	bottom: 100px;
+    z-index: 5;
+    transform: rotate(-14deg);
+}
