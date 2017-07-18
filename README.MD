@@ -12,7 +12,7 @@ Additionaly, repository has set of tasks for beginners
 
 ## Table of Contents
 
-* [Development path](#development-path)
+1. [Development path](#development-path)
 
 ## Development path
 > Visual presentation of roadmap to becoming a front-end developer ( [source](https://github.com/kamranahmedse/developer-roadmap) )
@@ -29,7 +29,7 @@ Additionaly, repository has set of tasks for beginners
 
 ### IDE - Integrated developments environments
 
-1. [Sublime text](https://www.sublimetext.com/3)
+#### 1. [Sublime text](https://www.sublimetext.com/3)
 
 Editor is really friendly tool for all kind of developers. It works best when is well configured.
 If you want to know more see the [Tutorial](https://sublimegit.readthedocs.io/en/latest//tutorial.html#sharing-our-project-with-the-world). All important informations are there (configuration, instruction, customizations, plugins, etc.).
