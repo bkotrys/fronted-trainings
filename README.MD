@@ -29,14 +29,17 @@ Additionaly, repository has set of tasks for beginners
 
 ### IDE - Integrated developments environments
 
-#### 1. [Sublime text](https://www.sublimetext.com/3)
+#### 1. [SUBLIME TEXT](https://www.sublimetext.com/3)
 
 Editor is really friendly tool for all kind of developers. It works best when is well configured.
 If you want to know more see the [Tutorial](https://sublimegit.readthedocs.io/en/latest//tutorial.html#sharing-our-project-with-the-world). All important informations are there (configuration, instruction, customizations, plugins, etc.).
 
 How to install packages ? - [Package Control](https://packagecontrol.io/installation#Simple) 
 
-Useful packages: 
+**Useful packages**: 
 * [Color Picker](http://weslly.github.io/ColorPicker/)  
 * [Autoprefixer](https://github.com/sindresorhus/sublime-autoprefixer)
 
+## Useful sources
+
+* [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
