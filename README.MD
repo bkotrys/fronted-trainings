@@ -14,7 +14,7 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 ## Table of Contents
 
 1. [Development path](#development-path)
-2. [Recommended tools](#recommended-tools)
+2. [Recommended IDE](#integrated-development-environments)
 	* [Sublime text](#sublime-text)
 
 
@@ -29,14 +29,14 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 
 ![](https://i.imgur.com/5vFTWcO.png)
 
-## IDE - Integrated developments environments
+## Integrated development environments
 
 Good IDE is an indispensable tool for every developer. You need to match it to your personal needs, code language and specific of work.
 Below are the tools I recommend.
 
-### 1. [SUBLIME TEXT](https://www.sublimetext.com/3)
+### 1. SUBLIME TEXT
 
-Sublime text is really friendly tool for all kind of developers. It works best when is well configured.
+**[Sublime text](https://www.sublimetext.com/3)** is really friendly tool for all kind of developers. It works best when is well configured.
 If you want to know more see the [Tutorial](https://sublimegit.readthedocs.io/en/latest//tutorial.html#sharing-our-project-with-the-world). All important informations are there (configuration, instruction, customizations, plugins, etc.).
 
 How to install packages ? - [Package Control](https://packagecontrol.io/installation#Simple) 
