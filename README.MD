@@ -31,7 +31,7 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 
 ## IDE - Integrated developments environments
 
-Good IDE is an indispensable tool for every developer. You need to much it to your personal needs, code language and specific of work.
+Good IDE is an indispensable tool for every developer. You need to match it to your personal needs, code language and specific of work.
 Below are the tools I recommend.
 
 ### 1. [SUBLIME TEXT](https://www.sublimetext.com/3)
