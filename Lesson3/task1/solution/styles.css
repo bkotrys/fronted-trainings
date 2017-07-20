@@ -161,3 +161,52 @@ main {
 .choices-list input {
 	margin-right: 10px;
 }
+
+/* ===HELP STYLES=== */
+
+#help-section1-box1 {
+	width: 50%;
+	height: 100%;
+	background-color: blue;
+}
+
+#help-section1-box2 {
+	width: 50%;
+	height: 100%;
+}
+
+#help-section2-box1 {
+	width: 25%;
+	vertical-align: middle;
+}
+
+#help-section2-box2 {
+	width: 75%;
+}
+
+#help-section1 {
+	height: 100px;
+}
+
+#help-section2 {
+	height: 300px;
+}
+
+.help-section {
+	width: 100%;
+	display: inline-flex;
+	margin-bottom: 25px;
+	height: 100%;
+}
+
+.help-section-box {
+	border: solid black 1px;
+	padding: 10px;
+	height: 100%;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
