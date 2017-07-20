@@ -1,0 +1,163 @@
+body {
+	margin: 30px;
+}
+
+header {
+	border-bottom: 2px solid #000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 20px 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
+}
+
+header h1 {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+}
+
+fieldset {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 10px 20px 20px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+}
+
+legend {
+	padding: 0 10px;
+}
+
+button {
+	cursor: pointer;
+	font-weight: bold;
+	border: 2px solid #444;
+}
+
+button:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+main {
+	position: relative;
+}
+
+#info-btn {
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+}
+
+#submit-btn {
+	float: right;
+	padding: 5px 15px;
+}
+
+#reset-btn {
+	float: left;
+	padding: 5px 15px;
+}
+
+
+.input-set {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 10px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+}
+
+.triple-set > *:not(:nth-child(3)),
+.double-set > *:not(:nth-child(2)) {
+	padding-right: 20px;
+}
+
+.triple-set > * {
+	width: calc(100% / 3)
+}
+
+.double-set > * {
+	width: 50%
+}
+
+.single-set > * {
+	width: 100%
+}
+
+.input-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
+
+}
+
+.input-wrapper label {
+	width: 120px;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+	height: 26px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+	padding-left: 10px;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+}
+
+.choices-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.choices-wrapper span {
+	margin-top: 3px;
+}
+
+.choices-list {
+	list-style: none;
+	width: 100%;
+	margin: 0;
+	border-left: 2px solid #000;
+	padding: 5px 20px;
+	margin-left: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;		
+}
+
+.choices-list * {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+}
+
+.choices-list label {
+	margin-bottom: 	10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.choices-list input {
+	margin-right: 10px;
+}

@@ -1,4 +1,4 @@
-Lesson 3 > task 1 > description
+-Lesson 3 > task 1 > description
 
 In this task as root project use example/ from Lesson2/task2. 
 Copy this folder and work on it.
@@ -8,10 +8,10 @@ Use only HTML and CSS.
 
 // Index.html - Form page
 
-1. Inputs 'Name', 'Surname', 'Age', 'Birth', 'Password' and 'Retry password' must be required.
-2. Phone should have 9 characters. No less no more.
-3. Add placeholder text for 'Name' input - "First Name". 
-4. Town should have default value - "Wroclaw"
+D 1. Inputs 'Name', 'Surname', 'Age', 'Birth', 'Password' and 'Retry password' must be required.
+D 2. Phone should have 9 characters. No less no more.
+D 3. Add placeholder text for 'Name' input - "First Name". 
+D 4. Town should have default value - "Wroclaw"
 5. Date - min value should be '1990-12-20' and max should be '2000-01-12';
 6. Add new fieldset section Additional Data (the same as 'advanced-form-mockup.png'). There are 3 input fields:
    - 'email' input with placeholder - "Apply E-mail..."
