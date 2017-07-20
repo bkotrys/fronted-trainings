@@ -21,6 +21,7 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 4. [Front-end technologies ](#front-end-technologies)
     * [HTML and CSS](#html-and-css)
     * [Javascript](#javascript)
+5. [Other useful sources](#other-useful-sources)
 
 
 ## Development path
@@ -49,9 +50,6 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 **Useful packages**: 
 * [Color Picker](http://weslly.github.io/ColorPicker/)  
 * [Autoprefixer](https://github.com/sindresorhus/sublime-autoprefixer)
-
-## Useful sources
-* [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
 
 ## Version Control Systems
 
@@ -89,4 +87,5 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 **References**:  [W3Schools](https://www.w3schools.com/Js/)
 
-
+## Other useful sources
+* [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
