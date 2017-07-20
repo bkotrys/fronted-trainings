@@ -15,12 +15,12 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 
 1. [Development path](#development-path)
 2. [Recommended IDE](#integrated-development-environments)
-	* [Sublime text](#sublime-text)
+    * [Sublime text](#sublime-text)
 3. [Version Control Systems](#version-control-system)
-  * [GIT](#git)
+    * [GIT](#git)
 4. [Front-end technologies ](#front-end-technologies)
-  * [HTML and CSS](#html-and-css)
-  * [Javascript](#css)
+    * [HTML and CSS](#html-and-css)
+    * [Javascript](#css)
 
 
 ## Development path
@@ -56,10 +56,11 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 ## Version Control Systems
 
 ### GIT
-**References**: [Official](https://git-scm.com/docs)
+
+**References**: [Official](https://git-scm.com/docs), (-> Download <-)[https://git-scm.com/downloads]
 
 **Ebooks**:
-* [Introduction to git](https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start)
+* [Introduction to git](https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start) - ebook from git-tower
 
 **Tutorials**:
 * [Learn git branching](http://learngitbranching.js.org/) - visual and interactive way to learn Git 
@@ -70,7 +71,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 ### HTML and CSS
 
-**References**: W3Schools - [CSS](https://www.w3schools.com/html/html_intro.asp), [HTML](https://www.w3schools.com/css/css3_intro.asp)
+**References**:  W3Schools - [CSS](https://www.w3schools.com/html/html_intro.asp), [HTML](https://www.w3schools.com/css/css3_intro.asp)
 
 **Articles**:
 * [What is the difference between id and class?](https://css-tricks.com/the-difference-between-id-and-class/)
@@ -82,10 +83,10 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 **Tutorials**:
 * [HTML beginners guide](https://websitesetup.org/html-beginners-guide/) - Step-by-step Introduction to HTML and creating a simple page
 * [Learn HTML and CSS](https://www.codecademy.com/learn/learn-html-css) - Free, interactive course from CodeAcademy
-* [Flexbox playground and code generator](http://the-echoplex.net/flexyboxes/)
+* [Flexbox playground and code generator](http://the-echoplex.net/flexyboxes/) - really nice visualisation of Flexbox powers
 
 ### Javascript 
-**References**: 
-[W3Schools](https://www.w3schools.com/Js/)
+
+**References**:  [W3Schools](https://www.w3schools.com/Js/)
 
 
