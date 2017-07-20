@@ -57,7 +57,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 ### GIT
 
-**References**: [Official](https://git-scm.com/docs), ->(Download)[https://git-scm.com/downloads]<-
+**References**: [Official](https://git-scm.com/docs), ->[Download](https://git-scm.com/downloads)<-
 
 **Ebooks**:
 * [Introduction to git](https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start) - ebook from git-tower
