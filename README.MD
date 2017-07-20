@@ -20,7 +20,7 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
     * [GIT](#git)
 4. [Front-end technologies ](#front-end-technologies)
     * [HTML and CSS](#html-and-css)
-    * [Javascript](#css)
+    * [Javascript](#javascript)
 
 
 ## Development path
@@ -57,7 +57,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 ### GIT
 
-**References**: [Official](https://git-scm.com/docs), (-> Download <-)[https://git-scm.com/downloads]
+**References**: [Official](https://git-scm.com/docs), ->(Download)[https://git-scm.com/downloads]<-
 
 **Ebooks**:
 * [Introduction to git](https://www.git-tower.com/learn/git/ebook/en/command-line/introduction#start) - ebook from git-tower
