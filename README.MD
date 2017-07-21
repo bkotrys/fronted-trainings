@@ -77,15 +77,23 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Understanding Z-Index](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index)
 * [A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [CSS - Position property specifity](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+* [CSS - truncate string with ellipsis (single line)](https://css-tricks.com/snippets/css/truncate-string-with-ellipsis/)
+* [CSS - truncate string with ellipsis (multi line)](http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/)
+* [CSS - Complete guide to grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 **Tutorials**:
+* [Learn HTML and CSS](https://www.codecademy.com/learn/learn-html-css) - interactive course from CodeAcademy
 * [HTML beginners guide](https://websitesetup.org/html-beginners-guide/) - Step-by-step Introduction to HTML and creating a simple page
-* [Learn HTML and CSS](https://www.codecademy.com/learn/learn-html-css) - Free, interactive course from CodeAcademy
 * [Flexbox playground and code generator](http://the-echoplex.net/flexyboxes/) - really nice visualisation of Flexbox powers
 
 ### Javascript 
 
 **References**:  [W3Schools](https://www.w3schools.com/Js/)
+
+**Tutorials**:
+* [Learn Javascript](https://www.codecademy.com/learn/javascript) - interactive course by CodeAcademy
+* [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
+* [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
 ## Other useful sources
 * [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
