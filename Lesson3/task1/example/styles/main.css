@@ -1,0 +1,50 @@
+@import 'forms.css';
+@import 'buttons.css';
+
+body {
+	margin: 30px;
+}
+
+header {
+	border-bottom: 2px solid #000;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 20px 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;	
+}
+
+header h1 {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
+}
+
+fieldset {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 10px 20px 20px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;	
+}
+
+legend {
+	padding: 0 10px;
+}
+
+button, a {
+	cursor: pointer;
+	font-weight: bold;
+	border: 2px solid #444;
+}
+
+button:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+main {
+	position: relative;
+}
