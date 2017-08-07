@@ -1,0 +1,29 @@
+.action-btn {
+  padding: 5px 15px;
+}
+
+#info-btn {
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#info-btn:hover {
+  background-color: gray; 
+}
+
+#submit-btn {
+  float: right;
+  background-color: green;
+}
+
+#back-btn, 
+#reset-btn {
+  text-decoration: none;
+  background: gray;
+  float: left;
+}

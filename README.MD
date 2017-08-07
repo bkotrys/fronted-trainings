@@ -90,6 +90,14 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 **References**:  [W3Schools](https://www.w3schools.com/Js/)
 
+**Articles**
+* [Functions (PL)](http://kursjs.pl/kurs/super-podstawy/funkcje.php)
+* [Document Object Model (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia.php)
+* [DOM elements relations (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia_nody.php)
+* [DOM operations (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia_tworzenie_i_usuwanie.php)
+* [Operators (PL)]http://kursjs.pl/kurs/super-podstawy/operatory.php
+* [Closures (PL)](http://blog.nebula.us/13-javascript-closures-czyli-zrozumiec-i-wykorzystac-domkniecia)
+
 **Tutorials**:
 * [Learn Javascript](https://www.codecademy.com/learn/javascript) - interactive course by CodeAcademy
 * [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
