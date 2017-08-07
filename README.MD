@@ -95,7 +95,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Document Object Model (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia.php)
 * [DOM elements relations (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia_nody.php)
 * [DOM operations (PL)](http://kursjs.pl/kurs/hierarchia/hierarchia_tworzenie_i_usuwanie.php)
-* [Operators (PL)]http://kursjs.pl/kurs/super-podstawy/operatory.php
+* [Operators (PL)](http://kursjs.pl/kurs/super-podstawy/operatory.php)
 * [Closures (PL)](http://blog.nebula.us/13-javascript-closures-czyli-zrozumiec-i-wykorzystac-domkniecia)
 
 **Tutorials**:
