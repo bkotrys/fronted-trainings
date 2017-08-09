@@ -1,0 +1,2 @@
+After submit/save click gather all form data and show them on interface as summary. Form section should be hidden. 
+Additionaly there should be also ‘Refresh’ button which show empty/initial form and hide summary section.
