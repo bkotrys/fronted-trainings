@@ -39,8 +39,8 @@
     var summarySection = document.createElement('div');
     var values = Object.values(person);
     var keys = Object.keys(person);
-	var i=0;
-    for (i=0; i < Object.keys(person).length; i++) {
+
+    for (var i = 0; i < Object.keys(person).length; i++) {
     	//console.log(keys[i]+'='+values[i]);
     	summarySection.innerHTML = summarySection.innerHTML+'<h5>'+keys[i]+': '+values[i]+'</h5>';
     }
