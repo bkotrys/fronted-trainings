@@ -23,6 +23,13 @@ div {
 	align-items: center;
 }
 
+header {
+	display: flex;
+	justify-content: center;
+	font-family: "Arial";
+	font-size: 20px;
+}
+
 .other-field {
 	background-color: #b2c7e8;
 }
@@ -45,4 +52,12 @@ div {
 	justify-content: flex-end;
 	align-items: flex-end;	
 	font-size: 35px;
+}
+
+#back {
+	background-color: #d12323;
+}
+
+#point {
+	background-color: #d12323;
 }

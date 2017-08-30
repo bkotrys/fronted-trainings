@@ -11,27 +11,24 @@
     hideForm(mainSection);
     addSummarySection(mainSection);
     //console.log('res test1');
+    
+    document.getElementById("reset").addEventListener('click', function(){
+      evt.preventDefault();
+      console.log('res test1');
+      showForm(mainSection);
+      
+      });
   }
 
-/*
-  function onReset (evt) {
-  	evt.preventDefault();
-  	var summarySection = document.querySelector('div');
-    showForm(summarySection);
-
-    ///////////////
-    console.log('res test1');
-  }*/
 
   function hideForm(mainSection) {
     var form = mainSection.querySelector('form');
     form.style.display = 'none';
   }
 
-  function showForm(summarySection) {
-    //var form = mainSection.querySelector('form');
-    var div = summarySection.querySelector('div');
-    div.style.display = 'none';
+  function showForm(mainSection) {
+    var form = mainSection.querySelector('form');
+    form.style.display = 'flex';
   }
 
    function addSummarySection(mainSection) {
@@ -44,22 +41,8 @@
     	//console.log(keys[i]+'='+values[i]);
     	summarySection.innerHTML = summarySection.innerHTML+'<h5>'+keys[i]+': '+values[i]+'</h5>';
     }
-	summarySection.innerHTML = summarySection.innerHTML+'<button id="reset" class="action-btn">Reset</button>';
+	   summarySection.innerHTML = summarySection.innerHTML+'<button id="reset" class="action-btn">Reset</button>';
    	
-
-   	/*  TA LINIJKA NISZCZY WSZYSTKO :( \/ \/
-   	
-   	document.getElementById("reset").addEventListener('click', function(){
-   		evt.preventDefault();
-  		var summarySection = document.querySelector('div');
-    	showForm(summarySection);
-
-    
-    	console.log('res test1');
-   		});
-
-   		*/
-
     mainSection.appendChild(summarySection);
    }
 

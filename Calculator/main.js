@@ -27,12 +27,14 @@
   	}
 
   	//Operations
+  	
+  	/* 
   	function back(evt) {
   		console.log('back <');
-  	}
+  	}*/
 
   	function division(evt) {
-  		display('\\');
+  		display('/');
   	}
 
   	function multiplication(evt) {
@@ -49,15 +51,16 @@
 
   	// Delete
   	function del(evt) {
-  		display('cls');
+  		clear();
   	}
 
+  	/*
   	function point(evt) {
   		display(',');
-  	}
+  	}*/
 
   	function equal(evt) {
-  		console.log('equal =');
+  		equal();
   	}
 
   	//Numbers
@@ -101,13 +104,72 @@
   		display(0);
   	}
 
+
+
+  	var value1=0;
+  	var value2=0;
+  	var result=0;
+  	var operation='';
+    var displayField = document.getElementById("result");
+
   	function display(value) {
-  		var test = document.getElementById("result");
-  		
-  		if (value !== 'cls') {
-  			test.innerText = test.innerText + value;
-  		} else {
-  			test.innerText = '';
+
+  		if (operation === '') {
+  			if (value != 0 && value != 1 && value != 2 && value != 3 && value != 4 && value != 5 && value != 6 && value != 7 && value != 8 && value != 9) {
+  				if(value1 != 0) {
+	  				operation=value;
+	  				//console.log('operation = '+operation);
+	  				//return operation;
+	  				displayField.innerText = displayField.innerText+operation;
+  				}
+  			} else {
+  				value1 = (value1*10) + value;
+  				//console.log('value1 = '+value1);
+  				//return value1;
+  				displayField.innerText = value1;
+  			}
+		} else {
+			if (value != 0 && value != 1 && value != 2 && value != 3 && value != 4 && value != 5 && value != 6 && value != 7 && value != 8 && value != 9) {
+  				operation=value;
+  				//console.log('operation = '+operation);
+  				//return operation;
+  			} else {
+  				value2 = (value2*10) + value;
+  				//console.log('value2 = '+value2);
+  				//return value2;
+  				var value2String;
+  				value2String = String(value2);
+  				displayField.innerText = displayField.innerText + value2String.slice(-1);
+  			}
   		}
-  	}
+	}
+
+	function equal() {
+		console.log('value1 = '+value1);
+		console.log('value2 = '+value2);
+		console.log('operation = '+operation);
+		
+		if (operation == '+') {
+			result = value1 + value2;
+			displayField.innerText = result;
+		} else if (operation == '-') {
+			result = value1 - value2;
+			displayField.innerText = result;
+		} else if (operation == '*') {
+			result = value1 * value2;
+			displayField.innerText = result;
+		} else if (operation == '/') {
+			result = value1 / value2;
+			displayField.innerText = result;
+		}
+	}
+
+	function clear() {
+		value1=0;
+  		value2=0;
+  		result=0;
+  		operation='';
+  		displayField.innerText = '';
+	}
+
 })();
