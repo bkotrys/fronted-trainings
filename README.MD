@@ -103,5 +103,24 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
 * [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
+### Chrome Debugging
+**Tutorials**
+
+### NPM
+**Tutorials**
+* [Official NPM tutorial](https://docs.npmjs.com/getting-started/what-is-npm)
+
+### Gulp
+**Tutorials**
+* [GULP, NODE, NPM - tutorial video PL](https://www.youtube.com/watch?v=TQKH13J6M30) 
+* [Tutorial GUlP - basic setup with SASS](https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js)
+* [GULP configurations - PL](http://bedekodzic.pl/gulp/)
+
+### SASS
+**Tutorials**
+* [SASS official tutorial](http://sass-lang.com/guide)
+* [SASS Basics - PL](http://shebang.pl/artykuly/podstawy-sass/)
+
+
 ## Other useful sources
 * [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
