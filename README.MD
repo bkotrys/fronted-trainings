@@ -104,7 +104,15 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
 ### Chrome Debugging
+**References**: 
+* [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
+
+**Articles**
+* [Debugging javascript with breakpoints](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
+
 **Tutorials**
+* [Debugging JavaScript using Breakpoints with the Google Chrome Developer Tools](https://www.youtube.com/watch?v=htZAU7FM7GI)
+* [Debugging JavaScript in chrome](https://www.youtube.com/watch?v=KbEx0s06VLs)
 
 ### NPM
 **Tutorials**
