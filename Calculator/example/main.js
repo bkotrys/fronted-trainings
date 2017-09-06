@@ -154,6 +154,7 @@
 		return higherPriorityActionIndex;
 	}
 
+	// helper function which log in console current state
 	function printCurrentStateinConsole() {
 		console.log('numbers: ', numbers);
 		console.log('actions: ', actions);
