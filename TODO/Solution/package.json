@@ -1,0 +1,24 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkotrys/frontend-starter.git"
+  },
+  "author": "Kamil Faron",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bkotrys/frontend-starter/issues"
+  },
+  "homepage": "https://github.com/bkotrys/frontend-starter#readme"
+}
