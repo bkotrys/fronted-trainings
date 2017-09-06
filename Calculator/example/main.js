@@ -21,6 +21,7 @@
 	}
 
 	function clear() {
+		printCurrentStateinConsole();
 		resultField.innerText = "";
 	}
 
@@ -66,6 +67,7 @@
 		numbers.length = 0;
 		actions.length = 0;
 		clear();
+		isNewNumber = true;
 	}
 
 	function handleEqual(event) {
