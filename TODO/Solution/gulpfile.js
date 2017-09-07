@@ -12,5 +12,5 @@ gulp.task('hello', function() {
 gulp.task('sass', function(){
   return gulp.src('app/scss/styles.scss')
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('app/build/css'))
 });
