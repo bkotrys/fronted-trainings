@@ -1,3 +1,6 @@
+@import '../../../node_modules/normalize.css/normalize.css';
+@import 'buttons';
+
 $baseFontSize: 10px;
 $bgColor: #cce8e2;
 $defaultTextColour: rgb(255,25,233);
@@ -28,21 +31,32 @@ h1 {
     font-size: $baseFontSize * 5;
 }
 
-ul {
-	list-style-type: none;
-	padding: 0px;
-	margin: 0px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
+.todo-list-wrapper {
+	ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 
-li {
-	margin: 20px;
-	margin-bottom: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+		li {
+			margin: 20px;
+			margin-bottom: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			&:nth-child(2n) {
+				background: #444444;
+				padding: 10px
+			}
+			
+			&.blue {
+				background: blue;
+			}
+		}
+	}
 }
 
 input {
@@ -50,29 +64,7 @@ input {
 	padding: 0px;
 }
 
-
-.button {
-	border: 0px;
-	padding: 0px;
-	padding: 2px;
-	background-color: #e1e4ea;
-}
-
-.delete-button {
-	background-color: #c65d5d;
-}
-
-.edit-button {
-	background-color: #5da4c6;
-	margin-right: 5px;
-}
-
 #input-text {
 	width: 90%;
 	background-color: #e1e4ea;
-}
-
-#submit-btn {
-	width: 10%;
-	background-color: #5dc662;
 }
