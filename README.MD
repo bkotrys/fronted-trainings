@@ -103,6 +103,19 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
 * [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
+
+#### ECMASCRIPT 6+
+**Roadmap**
+* [List of sources dedicated ES6 learning](https://github.com/ericdouglas/ES6-Learning)
+
+**Articles**
+* [What's new in JS - PL](https://nafrontendzie.pl/ecmascript-6-co-nowego/)
+* [Get staryed with ES6](http://blog.teamtreehouse.com/get-started-ecmascript-6)
+
+**Turorials**
+* [ES6 tutorial video - all in one](https://www.youtube.com/watch?v=Jakoi0G8lBg)
+
+
 ### Chrome Debugging
 **References**: 
 * [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)

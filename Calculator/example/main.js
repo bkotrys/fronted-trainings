@@ -27,7 +27,7 @@
 
 	function onCalculatedFieldClick(event) {
 		var currentField = event.target;
-		var isNumberField = currentField.classList.contains('number-field')
+		var isNumberField = currentField.classList.contains('number-field');
 		var value = currentField.innerText;
 
 		displayCurrentExpression(value);
