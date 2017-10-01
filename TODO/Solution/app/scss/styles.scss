@@ -1,5 +1,7 @@
 @import '../../../node_modules/normalize.css/normalize.css';
+@import '../../../node_modules/font-awesome/css/font-awesome.min.css';
 @import 'buttons';
+@import 'done_list';
 
 $baseFontSize: 10px;
 $bgColor: #cce8e2;
@@ -32,6 +34,10 @@ h1 {
 }
 
 .todo-list-wrapper {
+	padding-bottom: 20px;
+	border-bottom: solid #e1e4ea 1px;
+	margin-bottom: 20px;
+
 	ul {
 		list-style-type: none;
 		padding: 0px;
@@ -50,10 +56,6 @@ h1 {
 			&:nth-child(2n) {
 				background: #444444;
 				padding: 10px
-			}
-			
-			&.blue {
-				background: blue;
 			}
 		}
 	}

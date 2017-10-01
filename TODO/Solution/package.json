@@ -4,17 +4,22 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0",
+    "uniq": "^1.0.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
-    "gulp-watch-sass": "^1.2.4"
+    "gulp-watch-sass": "^1.2.4",
+    "npm-run-all": "^4.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp sass:watch",
-    "build": "gulp sass"
+    "dev": "npm-run-all --parallel gulp-sass-watch watchify",
+    "build": "gulp sass & cd app & browserify main.js -o bundle.js",
+    "gulp-sass-watch": "gulp sass:watch",
+    "watchify": "cd app && watchify main.js -o bundle.js"
   },
   "repository": {
     "type": "git",

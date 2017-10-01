@@ -1,0 +1,36 @@
+$baseFontSize: 10px;
+
+.done-list-wrapper {
+	h1 {
+		margin: 0px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: $baseFontSize * 3;
+
+		li {
+			margin: 20px;
+			margin-bottom: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #bad6bb;
+			padding: 10px;
+			border: 2px solid grey;
+			&:nth-child(2n) {
+				background: #2d442e;
+				padding: 10px;
+				border: 3px solid grey;
+				font-size: $baseFontSize * 2;
+			}
+		}
+	}
+}

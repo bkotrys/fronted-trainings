@@ -1,8 +1,10 @@
+$baseFontSize: 10px;
+
 .button {
   border: 0px;
-  padding: 0px;
-  padding: 2px;
+  padding: 5px;
   background-color: #e1e4ea;
+  font-size: $baseFontSize * 2.5;
 }
 
 .delete-button {
@@ -11,6 +13,11 @@
 
 .edit-button {
   background-color: #5da4c6;
+  margin-right: 5px;
+}
+
+.done-button {
+  background-color: #a4e288;
   margin-right: 5px;
 }
 
