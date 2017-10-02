@@ -1,11 +1,8 @@
-@import '../../../node_modules/normalize.css/normalize.css';
-@import '../../../node_modules/font-awesome/css/font-awesome.min.css';
+@import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/font-awesome/css/font-awesome.min.css';
 @import 'buttons';
 @import 'done_list';
-
-$baseFontSize: 10px;
-$bgColor: #cce8e2;
-$defaultTextColour: rgb(255,25,233);
+@import 'variables';
 
 body {
 	background-color: $bgColor;
@@ -14,12 +11,14 @@ body {
 	flex-direction: column;
 	align-items: center;
 	font-family: Arial;
+	font-size: $baseFontSize
 }
 
 main {
 	background-color: white;
 	width: 70%;
 	padding: 20px;
+	font-size: 1.5em;
 }
 
 form {
@@ -30,7 +29,7 @@ form {
 }
 
 h1 {
-    font-size: $baseFontSize * 5;
+    font-size: 5em;
 }
 
 .todo-list-wrapper {
