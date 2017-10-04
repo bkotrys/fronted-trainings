@@ -16,11 +16,16 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
 1. [Development path](#development-path)
 2. [Recommended IDE](#integrated-development-environments)
     * [Sublime text](#sublime-text)
+    * [Visual Studio Code](#visual-studio-code)
 3. [Version Control Systems](#version-control-system)
     * [GIT](#git)
 4. [Front-end technologies ](#front-end-technologies)
     * [HTML and CSS](#html-and-css)
     * [Javascript](#javascript)
+    * [SASS](#sass)
+    * [NPM](#npm)
+    * [GULP](#gulp)
+    * [Chrome Debugging](#chrome-debugging)
 5. [Other useful sources](#other-useful-sources)
 
 
@@ -43,13 +48,28 @@ Below are the tools I recommend.
 ### SUBLIME TEXT
 
 **[Sublime text](https://www.sublimetext.com/3)** is really friendly tool for all kind of developers. It works best when is well configured.
-If you want to know more see the [Tutorial](https://sublimegit.readthedocs.io/en/latest//tutorial.html#sharing-our-project-with-the-world). All important informations are there (configuration, instruction, customizations, plugins, etc.).
+If you want to know more see the [Tutorial](https://sublimegit.readthedocs.io/en/latest//tutorial.html#sharing-our-project-with-the-world). All important informations are inside (configuration, instruction, customizations, plugins, etc.).
 
 How to install packages ? - [Package Control](https://packagecontrol.io/installation#Simple) 
 
 **Useful packages**: 
 * [Color Picker](http://weslly.github.io/ColorPicker/)  
 * [Autoprefixer](https://github.com/sindresorhus/sublime-autoprefixer)
+
+
+### Visual Studio Code
+
+"VS Code is a new type of tool that combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. Code provides comprehensive editing and debugging support, an extensibility model, and lightweight integration with existing tools." - [Open source - Visual Studio Code](https://github.com/Microsoft/vscode)
+
+**[Official vcode site](https://code.visualstudio.com/)**
+
+**Recommend extenstions: **
+* Atom Keymap
+* Auto Close Tag
+* AutoFileName
+* Autoprefixer
+* Beautify
+
 
 ## Version Control Systems
 
@@ -70,6 +90,9 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 ### HTML and CSS
 
 **References**:  W3Schools - [CSS](https://www.w3schools.com/html/html_intro.asp), [HTML](https://www.w3schools.com/css/css3_intro.asp)
+
+**Books**:
+* PL - [Moja pierwsza strona w HTML5 i CSS3](http://ferrante.pl/books/html/)
 
 **Articles**:
 * [What is the difference between id and class?](https://css-tricks.com/the-difference-between-id-and-class/)
@@ -103,8 +126,8 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
 * [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
-
 #### ECMASCRIPT 6+
+
 **Roadmap**
 * [List of sources dedicated ES6 learning](https://github.com/ericdouglas/ES6-Learning)
 
@@ -115,6 +138,22 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 **Turorials**
 * [ES6 tutorial video - all in one](https://www.youtube.com/watch?v=Jakoi0G8lBg)
 
+### SASS
+
+**Tutorials**
+* [SASS official tutorial](http://sass-lang.com/guide)
+* [SASS Basics - PL](http://shebang.pl/artykuly/podstawy-sass/)
+
+### NPM
+**Tutorials**
+* [Official NPM tutorial](https://docs.npmjs.com/getting-started/what-is-npm)
+
+### Gulp
+**Tutorials**
+* [GULP, NODE, NPM - tutorial video PL](https://www.youtube.com/watch?v=TQKH13J6M30) 
+* [Tutorial GUlP - basic setup with SASS](https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js)
+* [Building ES6 Javascript for the Browser with Gulp, Babel, and More](https://thesocietea.org/2016/01/building-es6-javascript-for-the-browser-with-gulp-babel-and-more/)
+* [GULP configurations - PL](http://bedekodzic.pl/gulp/)
 
 ### Chrome Debugging
 **References**: 
@@ -126,22 +165,6 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 **Tutorials**
 * [Debugging JavaScript using Breakpoints with the Google Chrome Developer Tools](https://www.youtube.com/watch?v=htZAU7FM7GI)
 * [Debugging JavaScript in chrome](https://www.youtube.com/watch?v=KbEx0s06VLs)
-
-### NPM
-**Tutorials**
-* [Official NPM tutorial](https://docs.npmjs.com/getting-started/what-is-npm)
-
-### Gulp
-**Tutorials**
-* [GULP, NODE, NPM - tutorial video PL](https://www.youtube.com/watch?v=TQKH13J6M30) 
-* [Tutorial GUlP - basic setup with SASS](https://scotch.io/tutorials/automate-your-tasks-easily-with-gulp-js)
-* [GULP configurations - PL](http://bedekodzic.pl/gulp/)
-
-### SASS
-**Tutorials**
-* [SASS official tutorial](http://sass-lang.com/guide)
-* [SASS Basics - PL](http://shebang.pl/artykuly/podstawy-sass/)
-
 
 ## Other useful sources
 * [Markdown: Syntax by John Gruber](http://weslly.github.io/ColorPicker/) - Helpful in creation of a decent README.md
