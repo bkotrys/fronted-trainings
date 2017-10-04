@@ -25,8 +25,8 @@ Additionaly, repository has set of tasks for beginners. For all of task will be 
     * [SASS](#sass)
     * [NPM](#npm)
     * [GULP](#gulp)
-    * [Chrome Debugging](#chrome-debugging)
-5. [Other useful sources](#other-useful-sources)
+5. [Chrome Debugging](#chrome-debugging)
+6. [Other useful sources](#other-useful-sources)
 
 
 ## Development path
@@ -155,7 +155,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Building ES6 Javascript for the Browser with Gulp, Babel, and More](https://thesocietea.org/2016/01/building-es6-javascript-for-the-browser-with-gulp-babel-and-more/)
 * [GULP configurations - PL](http://bedekodzic.pl/gulp/)
 
-### Chrome Debugging
+## Chrome Debugging
 **References**: 
 * [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 
