@@ -21,10 +21,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-run-all --parallel gulp-sass-watch watchify",
-    "build": "gulp sass & gulp browserify",
-    "gulp-sass-watch": "gulp sass:watch",
-    "watchify": "cd app && watchify main.js -o bundle.js"
+    "dev": "gulp",
+    "build": "gulp sass && gulp babel-and-browserify"
   },
   "repository": {
     "type": "git",
