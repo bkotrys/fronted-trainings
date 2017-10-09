@@ -3,6 +3,7 @@
 		margin: 0px;
 		display: flex;
 		justify-content: center;
+		font-size: $baseFontSize*4;
 	}
 	
 	ul {
@@ -19,15 +20,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			background: #bad6bb;
 			padding: 10px;
-			border: 2px solid grey;
-			font-size: 1.5em;
+			background: #e6f9d9;
 
 			&:nth-child(2n) {
-				background: #2d442e;
+				background: #cce5bc;
 				padding: 10px;
-				border: 3px solid grey;
 			}
 		}
 	}

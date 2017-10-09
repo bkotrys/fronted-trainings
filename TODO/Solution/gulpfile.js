@@ -1,27 +1,31 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var watchSass = require('gulp-watch-sass');
-var browserify = require('gulp-browserify');
+var browserify = require('browserify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream');
 
-// Basic usage 
-gulp.task('browserify', function () {
-  // Single entry point to browserify 
-  gulp.src('app/main.js')
-    .pipe(browserify({
-      insertGlobals: true,
-      debug: true
-    }))
-    .pipe(gulp.dest('./build/js'))
-});
-
+//Build SASS
 gulp.task('sass', function(){
-  return gulp.src('app/scss/styles.scss')
-    .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('./build/css'))
+  return gulp.src('src/scss/styles.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('build'))
 });
 
-gulp.task("sass:watch", () => {
-  gulp.watch([
-    "./app/**/*.scss",
-  ], ["sass"]);
+//Build Babel and Browserify
+gulp.task('babel-and-browserify', function () {
+    return browserify({entries: 'src/js/app.js', debug: true})
+        .transform("babelify", { presets: ["es2015"] })
+        .bundle()
+        .pipe(source('app.js'))
+        .pipe(gulp.dest('build'));
 });
+ 
+//Watch
+gulp.task('watch', function () {
+    gulp.watch('src/js/*.js', ['babel-and-browserify']);
+    gulp.watch('src/scss/*.scss', ['sass']);
+});
+
+//Default
+gulp.task('default', ['watch']);
