@@ -9,6 +9,7 @@
 	window.onload = function registerEvents() {
 		document.getElementById("delete").addEventListener('click', handleDelete);
 		document.getElementById("equal").addEventListener('click', handleEqual);
+		document.getElementById("back").addEventListener('click', handleBack);
 
 		var calcFields = document.getElementsByClassName('calc-field');
 		for (var i = 0; i < calcFields.length; i++) {
@@ -17,7 +18,9 @@
 	}
 
 	function displayCurrentExpression(value) {
+
 		resultField.innerText = resultField.innerText + value;
+
 	}
 
 	function clear() {
@@ -31,7 +34,7 @@
 		var value = currentField.innerText;
 
 		displayCurrentExpression(value);
-
+		
 		if (isNumberField) {
 			handleNumberMark(value);
 		} else {
@@ -59,8 +62,12 @@
 	}
 
 	function handleActionMark(value) {
-		actions.push(value);
-		isNewNumber = true;
+			if (isNewNumber == false) {
+				actions.push(value);
+				isNewNumber = true;
+			} else {
+				resultField.innerText = resultField.innerText.slice(0, -1);
+			}
 	}
 
 	function handleDelete(event) {
@@ -127,16 +134,16 @@
 	function simpleCalculate(number1, number2, action) {
 		var result = "";
 
-		if (action == '+') {
-			result = number1 + number2;
-		} else if (action == '-') {
-			result = number1 - number2;
-		} else if (action == '*') {
-			result = number1 * number2;
-		} else if (action == ':') {
-			result = number1 / number2;
-		}
-
+			if (action == '+') {
+				result = number1 + number2;
+			} else if (action == '-') {
+				result = number1 - number2;
+			} else if (action == '*') {
+				result = number1 * number2;
+			} else if (action == ':') {
+				result = number1 / number2;
+			}
+			
 		return "" + result;
 	}
 
@@ -154,10 +161,22 @@
 		return higherPriorityActionIndex;
 	}
 
+	function handleBack(event) {
+		if (isNewNumber){
+			actions.pop();
+		} else {
+			numbers.pop();
+		}
+
+		resultField.innerText = resultField.innerText.slice(0, -1);
+	}
+
 	// helper function which log in console current state
 	function printCurrentStateinConsole() {
 		console.log('numbers: ', numbers);
 		console.log('actions: ', actions);
 		console.log('------------------')
+
+		console.log("isNewNumber = "+isNewNumber);
 	}
 })();
