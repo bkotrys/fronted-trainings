@@ -6,7 +6,11 @@
 	var actions = [];
 	var isNewNumber = true;
 
-	window.onload = function registerEvents() {
+	window.onload = function initialize() {
+		registerEvents();
+	}
+
+	function registerEvents() {
 		document.getElementById("delete").addEventListener('click', handleDelete);
 		document.getElementById("equal").addEventListener('click', handleEqual);
 		document.getElementById("back").addEventListener('click', handleBack);
@@ -15,17 +19,6 @@
 		for (var i = 0; i < calcFields.length; i++) {
 			calcFields[i].addEventListener('click', onCalculatedFieldClick);
 		}
-	}
-
-	function displayCurrentExpression(value) {
-
-		resultField.innerText = resultField.innerText + value;
-
-	}
-
-	function clear() {
-		printCurrentStateinConsole();
-		resultField.innerText = "";
 	}
 
 	function onCalculatedFieldClick(event) {
@@ -54,11 +47,26 @@
 		isNewNumber = false;		
 	}
 
-	function updateLastNumber(value) {
-		var lastIdx = numbers.length - 1;
-		var lastNumber = numbers[lastIdx];
-		var nextNumber = lastNumber + value;
-		numbers[lastIdx] = nextNumber;
+	function handleBack(event) {
+		if (isNewNumber) {
+			actions.pop();
+		} else {
+			cutLastNumber();
+		}
+
+		resultField.innerText = resultField.innerText.slice(0, -1);
+	}
+
+	function cutLastNumber () {
+		var lastIndex = numbers.length - 1;
+		var lastNumber = numbers[numbers.length - 1];
+
+		if (lastNumber.length === 1) {
+			numbers.pop();
+		} else {
+			lastNumber = lastNumber.slice(0, -1);
+			numbers[lastIndex] = lastNumber;
+		}
 	}
 
 	function handleActionMark(value) {
@@ -120,11 +128,30 @@
 		var number1 = parseFloat(numbers[number1Index]);
 		var number2 = parseFloat(numbers[number2Index]);
 		var operation = actions[index];
-		var newNumber = simpleCalculate(number1, number2, operation);
 
-		numbers[number1Index] = newNumber;
-		removeElementFromList(numbers, number2Index);
+		if (!isNaN(number1) && !isNaN(number2)) {
+			var newNumber = simpleCalculate(number1, number2, operation);
+			numbers[number1Index] = newNumber;
+			removeElementFromList(numbers, number2Index);
+		}
+		
 		removeElementFromList(actions, index);
+	}
+	
+	function updateLastNumber(value) {
+		var lastIdx = numbers.length - 1;
+		var lastNumber = numbers[lastIdx];
+		var nextNumber = lastNumber + value;
+		numbers[lastIdx] = nextNumber;
+	}
+
+	function displayCurrentExpression(value) {
+		resultField.innerText = resultField.innerText + value;
+	}
+
+	function clear() {
+		printCurrentStateinConsole();
+		resultField.innerText = "";
 	}
 
 	function removeElementFromList(list, index) {
@@ -161,15 +188,7 @@
 		return higherPriorityActionIndex;
 	}
 
-	function handleBack(event) {
-		if (isNewNumber){
-			actions.pop();
-		} else {
-			numbers.pop();
-		}
 
-		resultField.innerText = resultField.innerText.slice(0, -1);
-	}
 
 	// helper function which log in console current state
 	function printCurrentStateinConsole() {
