@@ -19,24 +19,21 @@ function addNewTask(event) {
 
 	elementIdCount = elementIdCount + 1;
 	newTodoElement.setAttribute("id", `done-todo-element-${elementIdCount}`);
-	defineTaskButtons();
 
-	//ADDING TASK VALUE AND BUTTONS DIV
+	var taskBtns = defineTaskButtons();
+
 	newTodoElement.appendChild(document.createTextNode(newTaskValue));
-	newTodoElement.appendChild(newTodoElementButtonsDiv);
-	//ADDING ELEMENT TO LIST
+	newTodoElement.appendChild(taskBtns);
 	todoList.appendChild(newTodoElement);
 
 	form.reset();
 
-	//console.log(elementIdCount);
-
+ // ------ Rejestracja na wszystkie elementy nie na kazdy z osobna -------- //
 	buttons[elementIdCount - 1] = new Array(2);
 	buttons[elementIdCount - 1][0] = document.getElementById(`done-button-todo-element-${elementIdCount}`);
 	buttons[elementIdCount - 1][1] = document.getElementById(`edit-button-todo-element-${elementIdCount}`);
 	buttons[elementIdCount - 1][2] = document.getElementById(`delete-button-todo-element-${elementIdCount}`);
 
-	//console.log(Buttons);
 
 	buttons[elementIdCount - 1][0].addEventListener('click', function (event) {
 		var id = event.target.id;
@@ -55,38 +52,37 @@ function addNewTask(event) {
 		var idNumeric = id.replace(/^\D+/g, '');
 		onClick("Delete", idNumeric);
 	});
-
+// -------------------------------------- //
 } 
 
 function defineTaskButtons () {
-	//BUTTONS DIV
-	var newTodoElementButtonsDiv = document.createElement("div");
-	newTodoElementButtonsDiv.setAttribute("id", `buttons-div-${elementIdCount}`);
+	var taskBtns = document.createElement("div");
+	taskBtns.setAttribute("id", `buttons-div-${elementIdCount}`);
 
-	createButton('done', "fa-check-square-o");
-	createButton('edit', "fa-pencil-square-o");
-	createButton('delete', "fa-minus-square-o");
+	createButton('done', "fa-check-square-o", taskBtns);
+	createButton('edit', "fa-pencil-square-o", taskBtns);
+	createButton('delete', "fa-minus-square-o", taskBtns);
+
+	return taskBtns;
 }
 
-function createButton(type, iconClass) {
-	var newBtnWrapper = document.createElement("div");
-	newBtnWrapper.setAttribute("id", `buttons-div-${elementIdCount}`);
-
+function createButton(type, iconClass, btnsContainer) {
 	var newBtn = document.createElement("button");
 	newBtn.setAttribute("type", "button");
 	newBtn.setAttribute("class", `button ${type}-button`);
 	newBtn.setAttribute("id", `${type}-button-todo-element-${elementIdCount}`);
 
-	createBtnIcon(iconClass);
+	createBtnIcon(iconClass, newBtn);
+	
 	newBtn.appendChild(document.createTextNode(type));
-	newBtnWrapper.appendChild(newBtn);
+	btnsContainer.appendChild(newBtn);
 }
 
-function createBtnIcon(iconClass) {
-	var doneIcon = document.createElement("i");
-	doneIcon.setAttribute("class", `fa ${iconClass}`);
-	doneIcon.setAttribute("aria-hidden", "true");
-	newTodoElementButtonDone.appendChild(doneIcon);
+function createBtnIcon(iconClass, newBtn) {
+	var icon = document.createElement("i");
+	icon.setAttribute("class", `fa ${iconClass}`);
+	icon.setAttribute("aria-hidden", "true");
+	newBtn.appendChild(icon); 
 }
 
 function onClick (type, id) {
@@ -119,9 +115,9 @@ function taskDone(id) {
 	doneChild.setAttribute("id", `done-task-${id}`);
 }
 
+// Dopisac obsluge Edycji
 function taskEdit(id) {
 	console.log(`You will be able to edit your task id ${id}`);
-	
 }
 
 function taskDelete(id) {
