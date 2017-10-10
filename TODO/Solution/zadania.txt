@@ -1,0 +1,33 @@
+TODO lista:
+
+1. Udoskonalić style - wszystko w CSS:
+- odstępy pomiędzy tekstem "TODO" i "DONE" a ikonkami
+- odstępy pomiędzy tekstem a ikonką w buttonach, dodatkowo litera z duzej 
+
+2. Usunąć wszystkie ID z html i javascript. Zmienić logikę tak aby id nie były potrzebne.
+Obsługa eventów -> event.target albo event.currentTarget
+
+3. Obsłuzyć edycję tak jak rozmawialiśmy:
+- jak nie jest w edycji to tekst jest w inpucie, ktory ma flagę `disabled`
+- jak jest w edycji wszystkie przyciski przy danym tasku znikają pojawia się przycisk `Save`.
+- ładnie ostylować, najlepiej zeby podczas normalnego trybu nie było widać, ze tekst jest w inpucie
+
+4. Pamietaj o tym, zeby nie powtarzac kodu. 
+
+5. Zmienić kod w ten sposob zeby funkcja miala maks 10 linijek! Nie wliczamy pustych linijek
+
+6. Uporządkować kod, tak zeby czytało się go łatwo
+
+Zadanie do poćwiczenia javascript:
+Kazde zadanie powinno być w nowym pliku.
+
+1. Oblicz ile dni zostalo do swiat bozego narodzenia i wyswietl w konsoli.
+
+2. Napisz program ktory wyswietli Ci w konsoli wszystkie dni, ktore spelniaja podane warunki:
+- dzien to piatek
+- 5, 10 lub 20 dzien miesiaca
+- wystepuje w przedziale od 2010 - 2017
+
+3. Wygeneruj losowa liste 100 liczb z zakresu od 1 do 500. Wyswietl na interfejsie input + przycisk 'CHECK'. Uzytkownik powinien moc wpisac do tego input tylko liczbe z zakresu od 1 do 500. Po kliknieciu program powinien sprawdzic, czy podana przez uzytkownika liczba znajduje sie na liscie wygenerowanej na poczatku. Jesli tak to wyswietl komunikat ze sie powiodlo, jesli nie to rowniez wyswietl komunikat 
+
+
