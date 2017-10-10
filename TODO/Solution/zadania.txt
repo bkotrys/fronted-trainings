@@ -1,4 +1,4 @@
-TODO lista:
+------- TODO lista:
 
 1. Udoskonalić style - wszystko w CSS:
 - odstępy pomiędzy tekstem "TODO" i "DONE" a ikonkami
@@ -18,7 +18,7 @@ Obsługa eventów -> event.target albo event.currentTarget
 
 6. Uporządkować kod, tak zeby czytało się go łatwo
 
-Zadanie do poćwiczenia javascript:
+-------- Zadanie do poćwiczenia javascript:
 Kazde zadanie powinno być w nowym pliku.
 
 1. Oblicz ile dni zostalo do swiat bozego narodzenia i wyswietl w konsoli.
@@ -30,4 +30,5 @@ Kazde zadanie powinno być w nowym pliku.
 
 3. Wygeneruj losowa liste 100 liczb z zakresu od 1 do 500. Wyswietl na interfejsie input + przycisk 'CHECK'. Uzytkownik powinien moc wpisac do tego input tylko liczbe z zakresu od 1 do 500. Po kliknieciu program powinien sprawdzic, czy podana przez uzytkownika liczba znajduje sie na liscie wygenerowanej na poczatku. Jesli tak to wyswietl komunikat ze sie powiodlo, jesli nie to rowniez wyswietl komunikat 
 
+-------- Przerobic tutorial z CodeSchool - najlepiej wszystkie 5 poziomów :)
 
