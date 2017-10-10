@@ -28,7 +28,9 @@ Kazde zadanie powinno być w nowym pliku.
 - 5, 10 lub 20 dzien miesiaca
 - wystepuje w przedziale od 2010 - 2017
 
-3. Wygeneruj losowa liste 100 liczb z zakresu od 1 do 500. Wyswietl na interfejsie input + przycisk 'CHECK'. Uzytkownik powinien moc wpisac do tego input tylko liczbe z zakresu od 1 do 500. Po kliknieciu program powinien sprawdzic, czy podana przez uzytkownika liczba znajduje sie na liscie wygenerowanej na poczatku. Jesli tak to wyswietl komunikat ze sie powiodlo, jesli nie to rowniez wyswietl komunikat 
+3. Wygeneruj losowa liste 100 liczb z zakresu od 1 do 500 (nie pokazuj jej na interfejsie). 
+Wyswietl na interfejsie input + button 'CHECK'. Uzytkownik powinien moc wpisac do tego input tylko liczbe z zakresu od 1 do 500. 
+Po kliknieciu w button program powinien sprawdzic, czy podana przez uzytkownika liczba znajduje sie na liscie wygenerowanej na poczatku. Jesli tak to wyswietl komunikat ze sie powiodlo, jesli nie to rowniez wyswietl komunikat 
 
 -------- Przerobic tutorial z CodeSchool - najlepiej wszystkie 5 poziomów :)
 
