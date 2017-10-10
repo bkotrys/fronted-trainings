@@ -7,8 +7,8 @@ var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
-var livereload = require('gulp-livereload');
-
+var http = require('http');
+var st = require('st');
 //Build SASS
 gulp.task('sass', function(){
   return gulp.src('src/scss/styles.scss')
@@ -25,13 +25,11 @@ gulp.task('browserify', function () {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./build/js'))
-        .pipe(livereload());
+        .pipe(gulp.dest('./build/js'));
 });
  
 //Watch
 gulp.task('watch', function () {
-    livereload.listen();
     gulp.watch('src/js/*.js', ['browserify']);
     gulp.watch('src/scss/*.scss', ['sass']);
 });

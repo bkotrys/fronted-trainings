@@ -10,7 +10,7 @@ function registerEvents() {
 	form.addEventListener("submit", addNewTask)
 }
 
-function addNewTask (event) {
+function addNewTask(event) {
 	event.preventDefault();
 
 	var newTaskValue = form.task.value;
