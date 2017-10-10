@@ -137,6 +137,5 @@ function taskDelete(id) {
 		var child = document.getElementById(`done-todo-element-${id}`);
 	}
 
-	
 	parent.removeChild(child);
 }

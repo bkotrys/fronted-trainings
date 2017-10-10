@@ -16,17 +16,7 @@ gulp.task('sass', function(){
     .pipe(gulp.dest('build'))
 });
 
-// //Build Babel and Browserify
-// gulp.task('babel-and-browserify', function () {
-//     return browserify({entries: 'src/js/app.js', debug: true})
-//         .transform("babelify", { presets: ["es2015"] })
-//         .bundle()
-//         .pipe(source('app.js'))
-//         .pipe(gulp.dest('build'));
-// });
-
 gulp.task('browserify', function () {
-    // app.js is your main JS file with all your module inclusions
     return browserify({ entries: './src/js/app.js', debug: true })
         .transform("babelify", { presets: ["es2015"] })
         .bundle()

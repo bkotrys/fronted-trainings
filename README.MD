@@ -8,8 +8,7 @@ Collection of materials and tasks about the front-end dedicated for people who w
 - have one source of true in one place - frontend developer guide
 - become a frontend developer hero ;)
 
-The repository was created to help other developers and collect all useful links, materials, tutorials which I personally recommend.
-Additionaly, repository has set of tasks for beginners. For all of task will be prepared password-protected solution which will be available only for people who will fork the reopository and prepare its own solution on github.
+The repository was created to help other developers and collect all useful links, materials, tutorials which I personally recommend. Additionaly, repository has set of tasks for beginners.
 
 ## Table of Contents
 
