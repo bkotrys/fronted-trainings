@@ -62,7 +62,7 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 **[Official vcode site](https://code.visualstudio.com/)**
 
-**Recommend extenstions: **
+**Recommend extenstions:**
 * Atom Keymap
 * Auto Close Tag
 * AutoFileName
