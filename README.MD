@@ -125,6 +125,9 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 * [Javascript road trip](https://www.codeschool.com/courses/javascript-road-trip-part-1) - interactive course by CodeSchool
 * [Javascript solo Tutorial](https://www.sololearn.com/Course/JavaScript/) - interactive course by SoloLearn
 
+**Challenges**:
+* [Coderbyte challenges](https://coderbyte.com/challenges)
+
 #### ECMASCRIPT 6+
 
 **Roadmap**
@@ -136,6 +139,16 @@ How to install packages ? - [Package Control](https://packagecontrol.io/installa
 
 **Turorials**
 * [ES6 tutorial video - all in one](https://www.youtube.com/watch?v=Jakoi0G8lBg)
+
+
+### JQuery
+**[Official documentation](https://jquery.com/)**
+
+**References**:  [W3Schools](https://www.w3schools.com/jquery/)
+
+**Tutorials**
+* [Interactive tutorial by Codeschool](https://www.codeschool.com/courses/try-jquery)
+
 
 ### SASS
 
