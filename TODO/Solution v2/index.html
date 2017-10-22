@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TODO</title>
+	<link rel="stylesheet" href="build/styles.css">
+</head>
+<body>
+	<header>
+		<h1><i class="fa fa-th-list" aria-hidden="true"></i>&nbsp;TO DO</h1>
+	</header>
+	<main>
+		<form id="form">
+			<input type="text" name="task" id="input-text" placeholder="What do you have TO DO?" maxlength="40" required="true">
+			<input type="submit" name="add" class="button" id="submit-btn" value="Add">
+		</form>
+		<section class="todo-list-wrapper">
+			<ul id="todo-list">
+				
+			</ul>
+		</section>
+		<section class="done-list-wrapper">
+			<h1><i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;DONE</h1>
+			<ul id="done-list">
+				
+			</ul>
+		</section>
+	</main>
+<script src="build/js/app.js"></script>
+</body>
+</html>

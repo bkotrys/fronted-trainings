@@ -1,0 +1,50 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import 'buttons';
+@import 'todo_list';
+@import 'done_list';
+@import 'variables';
+
+body {
+	background-color: $bgColor;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	font-family: Arial;
+	font-size: $baseFontSize;
+}
+
+main {
+	background-color: white;
+	width: 70%;
+	padding: 20px;
+	font-size: 1.5em;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 20px;
+	border-bottom: solid #e1e4ea 1px;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+input {
+	border: 0px;
+	padding: 5px;
+}
+
+#input-text {
+	width: 90%;
+	background-color: #e1e4ea;
+}
+
+
+.task-input {
+	background-color: transparent;
+	width: 50%;
+}
