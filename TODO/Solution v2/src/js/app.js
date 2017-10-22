@@ -96,6 +96,7 @@ function onEdit(event) {
 	buttonsDiv.setAttribute("style", "display: none");
 	inputToEdit.removeAttribute("disabled");
 	inputToEdit.setAttribute("style", "background-color: white");
+	inputToEdit.setAttribute("maxlength", "40");
 	var okButton = createOkButton();
 	editedElement.appendChild(okButton);
 	registerNewButtons();
