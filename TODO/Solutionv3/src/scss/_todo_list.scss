@@ -1,0 +1,29 @@
+.todo-list-wrapper {
+	padding-bottom: 20px;
+	border-bottom: solid #e1e4ea 1px;
+	margin-bottom: 20px;
+
+	ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		li {
+			margin: 20px;
+			margin-bottom: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			background: #e5eefc;
+
+			&:nth-child(2n) {
+				background: #abbbd3;
+				padding: 10px;
+			}
+		}
+	}
+}

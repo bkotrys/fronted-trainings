@@ -1,0 +1,35 @@
+{
+  "name": "TODO list",
+  "version": "1.1.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./build",
+    "build": "rollup -c",
+    "start": "yarn build -- --watch"
+  },
+  "author": "Kamil Faron",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "node-sass-package-importer": "^3.0.4",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sass-lint": "^1.0.0",
+    "rollup-plugin-scss": "^0.3.0",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^3.2.2",
+    "sass-lint": "^1.10.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "normalize.css": "^7.0.0"
+  }
+}
