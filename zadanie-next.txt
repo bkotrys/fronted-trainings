@@ -1,0 +1,35 @@
+Zadania:
+
+1. Drugie podejście do zadania z datami. Wykorzystaj tutaj bibliotekę: https://momentjs.com/ (instaluj jak w instrukcji przez npm)
+
+2. Przerobić najlepiej wszystkie kursy z ECMASCRIPT6, bo to wazne :)
+ a) https://www.nafrontendzie.pl/ecmascript-6-co-nowego 
+ b) http://blog.teamtreehouse.com/get-started-ecmascript-6
+ c) https://www.youtube.com/watch?v=IEf1KAcK6A8&t=3404s
+
+3. To samo z jQuery:
+ a) https://www.codeschool.com/courses/try-jquery - wszystkie 5 leveli
+ b) http://jqfundamentals.com/ - uzupełnienie wiedzy
+
+4. TODO:
+ a) napisać obsługę RWD, strona ma się ładnie wyświetlać pod kazdą rozdzielczością
+ b) RWD materiały:
+  - w mojej pracy masz dosyć fajnie parę rzeczy opisanych
+  - https://css-tricks.com/css-media-queries/
+  - https://developer.mozilla.org/pl/docs/Web/CSS/Media_Queries/Using_media_queries
+  - http://getbootstrap.com/ - nieobowiązkowe, ale fajnie by było, zebys się z tym zapoznał, bo to jest bardzo popularne (na początek będzie dobrze jak sobie poklikasz po tej stronce, zeby mial mniej wiecej pojecie co to jest)
+ c) Przeanalizuj dwie moje wersję TODO:
+  - zeby je odaplic zainstaluj globalnie rollupa: `npm install --g rollup`
+  - nastepnie `npm install` i `npm run build` w odpowiednim katalogu
+  - `npm start` albo `npm run start` to jest to samo co wczesniej `npm run watch`
+
+5. Zrefaktoruj kalkulator tak, zeby:
+ - najpierw przerób tutoriale! :D
+ - uzyć rollupa (https://rollupjs.org/ - mozesz sobie zerknac do dokumentacji), 
+  konfiguracja nie jest skomplikowana, wzoruj sie na moich wersjach aplikacji
+ - przerobić jak najwięcej kodu na jquery
+ - chciałbym, zebys sprobowal zrobić to na `class` tak jak ja w drugiej wersji. Moja propozycja jest taka, zebys
+ najpierw przerobil wszystko na jquery i es6 a pozniej na klasy kolejna wersje, bedzie Ci latwiej.
+ - uzywaj es6!
+
+ W razie problemow pisz do mnie :)
