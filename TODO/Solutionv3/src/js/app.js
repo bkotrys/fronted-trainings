@@ -47,10 +47,10 @@ function defineTaskButtons () {
 }
 
 function createButton(type, iconClass, btnsContainer) {
+	const $icon = createBtnIcon(iconClass);
 	const $newBtn = $("<button>")
 		.attr("type", "button")
 		.addClass(`button ${type}-button`);
-	const $icon = createBtnIcon(iconClass);
 
 	return $newBtn
 		.text(type)
@@ -71,7 +71,7 @@ function createBtnIcon(iconClass, $newBtn) {
 }
 
 function onButtonClick(event) {
-  	var $btn = $(event.target);
+  	const $btn = $(event.target);
   	
 		if ($btn.hasClass("done-button")) {
   		onDone(event);
@@ -91,9 +91,10 @@ function onDone(event) {
 }
 
 function onEdit(event) {
-	const $editedElement = $(event.target).parents('li');
+	const $btn = $(event.target);
+	const $editedElement = $btn.parents('li');
 	const $inputToEdit = $editedElement.find('input');
-	const $buttonsWrapper = $(event.target).parent();
+	const $buttonsWrapper = $btn.parent();
 
 	$buttonsWrapper.find("button").hide();
 	$inputToEdit
@@ -107,9 +108,9 @@ function onEdit(event) {
 }
 
 function onOk(event) {
-	const $element = $(event.target);
-	const $editedElement = $element.parents('li');
-	const $buttonsWrapper = $element.parent();
+	const $btn = $(event.target);
+	const $editedElement = $btn.parents('li');
+	const $buttonsWrapper = $btn.parent();
 	const $inputToEdit = $editedElement.find('input');
 
 	$inputToEdit
@@ -117,12 +118,12 @@ function onOk(event) {
 		.removeAttr("style");
 
 	$buttonsWrapper.find("button").show();
-	$element.hide();
+	$btn.hide();
 }
 
 function onDelete(event) {
-	const $element = $(event.target);
-	const $listElement = $element.parents('li');
+	const $btn = $(event.target);
+	const $listElement = $btn.parents('li');
 	$listElement.remove();
 }
 
