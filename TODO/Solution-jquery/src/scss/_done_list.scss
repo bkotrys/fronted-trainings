@@ -1,0 +1,32 @@
+.done-list-wrapper {
+	h1 {
+		margin: 0px;
+		display: flex;
+		justify-content: center;
+		font-size: $baseFontSize*4;
+	}
+	
+	ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		li {
+			margin: 20px;
+			margin-bottom: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px;
+			background: #e6f9d9;
+
+			&:nth-child(2n) {
+				background: #cce5bc;
+				padding: 10px;
+			}
+		}
+	}
+}

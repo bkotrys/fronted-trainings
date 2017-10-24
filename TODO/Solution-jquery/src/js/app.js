@@ -20,7 +20,7 @@ function addNewTask(event) {
 	const $taskBtns = defineTaskButtons();
 	const $taskValueInput = createTaskValueInput(newTaskValue);
 
-	$newTodoElement
+	$newTodoElement 
 		.append($taskValueInput)
 		.append($taskBtns)
 		.appendTo($todoList);
@@ -46,7 +46,7 @@ function defineTaskButtons () {
 		.append($deleteBtn);
 }
 
-function createButton(type, iconClass, btnsContainer) {
+function createButton(type, iconClass) {
 	const $icon = createBtnIcon(iconClass);
 	const $newBtn = $("<button>")
 		.attr("type", "button")
@@ -64,7 +64,7 @@ function createOkButton(event) {
 		.text('Ok');
 }
 
-function createBtnIcon(iconClass, $newBtn) {
+function createBtnIcon(iconClass) {
 	return $("<i>")
 		.addClass(`fa ${iconClass}`)
 		.attr("aria-hidden", "true")
