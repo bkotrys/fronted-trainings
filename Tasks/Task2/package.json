@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "moment": "^2.19.1",
     "normalize.css": "^7.0.0",
     "uniq": "^1.0.1"
   },
