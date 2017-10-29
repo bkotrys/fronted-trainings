@@ -23,7 +23,7 @@ gulp.task('browserify', function () {
         .bundle()
         .pipe(source('app.js'))
         .pipe(buffer())
-        .pipe(sourcemaps.init())
+        .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(uglify())
         .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./build/js'));
