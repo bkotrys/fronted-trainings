@@ -24,6 +24,13 @@
 				background: #abbbd3;
 				padding: 10px;
 			}
+
+			div {
+				@media only screen and (max-width: $maxWidth) {   
+	    			display: flex;
+	    			flex-direction: column;
+				}
+			}
 		}
 	}
 }

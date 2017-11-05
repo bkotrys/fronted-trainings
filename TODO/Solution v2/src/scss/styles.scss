@@ -1,9 +1,9 @@
 @import '../node_modules/normalize.css/normalize.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import 'variables';
 @import 'buttons';
 @import 'todo_list';
 @import 'done_list';
-@import 'variables';
 
 body {
 	background-color: $bgColor;
@@ -17,9 +17,14 @@ body {
 
 main {
 	background-color: white;
-	width: 70%;
+	width: $maxWidth;
+	min-width: 250px;
 	padding: 20px;
 	font-size: 1.5em;
+
+	@media only screen and (max-width: $maxWidth) {   
+	    width: 100%; 
+	}
 }
 
 form {
@@ -31,6 +36,7 @@ form {
 
 h1 {
     font-size: 5em;
+    min-width: 250px;
 }
 
 input {
@@ -39,12 +45,17 @@ input {
 }
 
 #input-text {
-	width: 90%;
+	width: 100%;
 	background-color: #e1e4ea;
 }
-
 
 .task-input {
 	background-color: transparent;
 	width: 50%;
+
+	@media only screen and (max-width: $maxWidth) {   
+	    width: 100%;
+	    height: 90px;
+	    text-overflow: ellipsis;
+	}
 }
