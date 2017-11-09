@@ -13,26 +13,26 @@ function checkNextDay() {
 			return 0;
 		}
 	} else {
-		date1.add(1, 'days');
-		checkNextDay();
+		nextDay(date1);
 	}
 }
 
 function isCorrectDayOfMonth() {
-	if (date1.date() === 5 || date1.date() === 10 || date1.date() ===20) {
+	const currentDate = date1.date();
+	const correctDays = [5, 10, 20];
+
+	if (correctDays.indexOf(currentDate) !== -1) {
 		console.log(`Date ${date1.format('YYYY-MM-DD')} is a ${date1.day()}'th day of the week.`);
-		date1.add(1, 'days');
-		checkNextDay();
-	} else {
-		date1.add(1, 'days');
-		checkNextDay();
 	}
+
+	nextDay(date1);
+}
+
+function nextDay() {
+	date.add(1, 'days');
+	checkNextDay();
 }
 
 function isFriday() {
-	if (date1.day() === 5) {
-		return true;
-	} else {
-		return false;
-	}
+	return date1.day() === 5;
 }

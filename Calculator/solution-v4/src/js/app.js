@@ -1,9 +1,9 @@
 import $ from 'jquery';
 import './../scss/styles.scss';
 
-const resultField = $('#result');
-const numbers = [];
-const actions = [];
+let resultField = $('#result');
+let numbers = [];
+let actions = [];
 let isNewNumber = true;
 
 $(function () {
@@ -14,7 +14,7 @@ function registerEvents() {
 	$('#delete').on('click', handleDelete);
 	$('#equal').on('click', handleEqual);
 	$('#back').on('click', handleBack);
-	$('.calc-field').on('click', onCalculatedFieldClick);
+	$('.calc-field').on('click', onCalculatedFieldClick);	
 }
 
 function onCalculatedFieldClick(event) {
@@ -43,7 +43,7 @@ function handleNumberMark(value) {
 	isNewNumber = false;		
 }
 
-function handleBack() {
+function handleBack(event) {
 	if (isNewNumber) {
 		actions.pop();
 	} else {
@@ -52,7 +52,7 @@ function handleBack() {
 	resultField.text(resultField.text().slice(0, -1));
 }
 
-function cutLastNumber() {
+function cutLastNumber () {
 	let lastIndex = numbers.length - 1;
 	let lastNumber = numbers[numbers.length - 1];
 
@@ -91,15 +91,14 @@ function handleEqual(event) {
 }
 
 function calculateResult() {
-	let result = ''; 
+	let result = ""; 
 	let higherPriorityActionIndex = findIndexOfActionWithHigerPriority();
 
 	if (higherPriorityActionIndex !== null) {
 		calculateFromGivenIndex(higherPriorityActionIndex);
 
-		if (numbers.length === 1) {
-			const [firstElement] = numbers;
-			result = firstElement;
+		if(numbers.length === 1) {
+			result = numbers[0];
 		} else {
 			return calculateResult();
 		}
