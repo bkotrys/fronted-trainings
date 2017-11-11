@@ -1,0 +1,10 @@
+Na podstawie layoutu załączonego w obrazku, odwzoruj interfejs w pełni funkcjonalny.
+Zainstaluj bootstrapa i korzystaj z jego komponentów - https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Chciałby, zebys nie stylowal elementow sam, masz sprobowac korzystac z gotowych elementow bootstrapa.
+Stylowanie mozesz zrobic w przypadku np wysrodkowaniu tabeli wzgledem calej strony i jakies male korekty, ktorych nie bedziesz w stanie zrobic z bootstrapem.
+Bootstrap ma ikonki, nie musza byc identyczne, ale maja byc z bootstrapa, zebys nauczyl sie z nich korzystac.
+Jesli chodzi o dzialanie tabeli. Na poczatku tabela jest pusta. Po kliknieciu w przycisk plusa, pojawia Ci sie okienko - https://getbootstrap.com/docs/4.0/components/modal/,
+w ktorym masz 3 inputy (account, userId, password) i przycisk `cancel` i `save`. Po zapisaniu, element dodaje Ci sie do tabelki. To samo w przypadku edycji - pojawia Ci sie podobne okienko, ale inputy sa wypelnione aktualnymi textami. Uzytownik moze je zmienic i zapisac. W przypadku klikniecia w przycisk usuwania elementu. Rowniez pojawia się okienko w ktorym uzytkownik musi potwierdzic lub nie swoja decyzje ("save" i "cancel" lub "yes" i "no"). 
+Kolejnym zadaniem jest przefiltrowanie tabeli po tekscie w inpucie `Search`. Input ma wyszukiwać po polu Account.
+
+Tego typu zadania mozesz miec na rekrutacjach wiec powodzonka :)
