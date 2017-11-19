@@ -10,7 +10,9 @@
   ],
   "extends": "airbnb-base",
   "rules": {
+    "linebreak-style": 0,
     "consistent-return": 0,
+    "class-methods-use-this": ["error", { "exceptMethods": ["simpleCalculate"] }],
     "import/newline-after-import": 0,
     "import/no-extraneous-dependencies": 0,
     "import/extensions": 0,
@@ -18,6 +20,7 @@
     "no-await-in-loop": 0,
     "prefer-arrow-callback": 0,
     "no-bitwise": 0,
+    "no-console":0,
     "no-plusplus": 0,
     "no-underscore-dangle": 0,
     "no-use-before-define": 0,

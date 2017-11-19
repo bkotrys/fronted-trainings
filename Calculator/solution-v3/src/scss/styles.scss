@@ -2,9 +2,9 @@
 @import './../node_modules/font-awesome/css/font-awesome.min.css';
 
 main {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 section {
@@ -14,53 +14,50 @@ section {
 }
 
 div {
+	align-items: center;
+	background-color: #808080;
 	display: flex;
-	background-color: grey;
-	width: 100px;
+	font-family: 'Arial';
+	font-size: 70px;
 	height: 100px;
+	justify-content: center;
 	margin-left: 5px;
 	margin-top: 5px;
-	font-size: 70px;
-	font-family: "Arial";
-	justify-content: center;
-	align-items: center;
+	width: 100px;
 }
 
 header {
 	display: flex;
-	justify-content: center;
-	font-family: "Arial";
+	font-family: 'Arial';
 	font-size: 20px;
+	justify-content: center;
 }
 
-.calc-field, .action-field {
+.calc-field,
+.action-field {
 	cursor: pointer;
 }
 
 .action-field {
 	background-color: #b2c7e8;
-}
 
-.action-field:hover {
-	background-color: #7b9fd1;
+	:hover {
+		background-color: #7b9fd1;
+	}
 }
 
 .number-field {
 	background-color: #eaf0f9;
+
+	:hover {
+		background-color: #bed2e2;
+	}
 }
 
-.number-field:hover {
-	background-color: #bed2e2;
-}
-
-#result {
-	width: 205px;
+.result-field {
+	align-items: flex-end;
 	background-color: #b9c2ce;
-	justify-content: flex-end;
-	align-items: flex-end;	
 	font-size: 35px;
-}
-
-#point {
-	background-color: #d12323;
+	justify-content: flex-end;
+	width: 205px;
 }
