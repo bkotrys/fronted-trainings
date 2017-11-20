@@ -4,7 +4,7 @@ import './../scss/styles.scss';
 export default class Calculator {
 	constructor() {
 		this.resultField = $('#result');
-		// this.numbers = initalNumbers;
+		this.numbers = [];
 		this.actions = [];
 		this.isNewNumber = true;
 	}
@@ -14,10 +14,10 @@ export default class Calculator {
 	}
 
 	registerEvents() {
-		$('#delete').on('click', this.handleDelete);
-		$('#equal').on('click', this.handleEqual);
-		$('#back').on('click', this.handleBack);
-		$('.calc-field').on('click', this.onCalculatedFieldClick);
+		$('#delete').on('click', this.handleDelete.bind(this));
+		$('#equal').on('click', this.handleEqual.bind(this));
+		$('#back').on('click', this.handleBack.bind(this));
+		$('.calc-field').on('click', this.onCalculatedFieldClick.bind(this));
 	}
 
 	onCalculatedFieldClick(event) {
@@ -123,8 +123,8 @@ export default class Calculator {
 	calculateFromGivenIndex(index) {
 		const number1Index = index;
 		const number2Index = index + 1;
-		const number1 = this.parseFloat(this.numbers[number1Index]);
-		const number2 = this.parseFloat(this.numbers[number2Index]);
+		const number1 = parseFloat(this.numbers[number1Index]);
+		const number2 = parseFloat(this.numbers[number2Index]);
 		const operation = this.actions[index];
 
 		if (!isNaN(number1) && !isNaN(number2)) {
@@ -154,7 +154,7 @@ export default class Calculator {
 	}
 
 	removeElementFromList(list, index) {
-		this.list.splice(index, 1);
+		list.splice(index, 1);
 	}
 
 	simpleCalculate(number1, number2, action) {
