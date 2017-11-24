@@ -28,10 +28,14 @@
     "sass-lint": "^1.10.2"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "@types/bootstrap": "^3.3.36",
+    "@types/jquery": "^3.2.16",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
     "normalize.css": "^7.0.0",
+    "rollup-plugin-tslint-fixed": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.8.1",
+    "tslint-config-airbnb": "^5.4.2",
+    "typescript": "^2.6.1",
     "yarn": "^1.3.2"
   }
 }

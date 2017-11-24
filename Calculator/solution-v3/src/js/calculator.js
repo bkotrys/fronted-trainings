@@ -14,9 +14,9 @@ export default class Calculator {
 	}
 
 	registerEvents() {
-		$('#delete').on('click', this.handleDelete.bind(this));
-		$('#equal').on('click', this.handleEqual.bind(this));
-		$('#back').on('click', this.handleBack.bind(this));
+		$('#delete').on('click', this.handleDelete);
+		$('#equal').on('click', this.handleEqual);
+		$('#back').on('click', this.handleBack);
 		$('.calc-field').on('click', this.onCalculatedFieldClick.bind(this));
 	}
 
@@ -128,12 +128,12 @@ export default class Calculator {
 		const operation = this.actions[index];
 
 		if (!isNaN(number1) && !isNaN(number2)) {
-			const newNumber = this.simpleCalculate(number1, number2, operation);
+			const newNumber = Calculator.simpleCalculate(number1, number2, operation);
 			this.numbers[number1Index] = newNumber;
-			this.removeElementFromList(this.numbers, number2Index);
+			Calculator.removeElementFromList(this.numbers, number2Index);
 		}
 
-		this.removeElementFromList(this.actions, index);
+		Calculator.removeElementFromList(this.actions, index);
 	}
 
 	updateLastNumber(value) {
@@ -151,26 +151,6 @@ export default class Calculator {
 	clear() {
 		this.printCurrentStateinConsole();
 		$('#result').text('');
-	}
-
-	removeElementFromList(list, index) {
-		list.splice(index, 1);
-	}
-
-	simpleCalculate(number1, number2, action) {
-		let result = '';
-
-		if (action === '+') {
-			result = number1 + number2;
-		} else if (action === '-') {
-			result = number1 - number2;
-		} else if (action === '*') {
-			result = number1 * number2;
-		} else if (action === ':') {
-			result = number1 / number2;
-		}
-
-		return `${result}`;
 	}
 
 	findIndexOfActionWithHigerPriority() {
@@ -195,4 +175,25 @@ export default class Calculator {
 		console.log('------------------');
 		console.log(`isNewNumber = ${this.isNewNumber}`);
 	}
+
+	static removeElementFromList(list, index) {
+		list.splice(index, 1);
+	}
+
+	static simpleCalculate(number1, number2, action) {
+		let result = '';
+
+		if (action === '+') {
+			result = number1 + number2;
+		} else if (action === '-') {
+			result = number1 - number2;
+		} else if (action === '*') {
+			result = number1 * number2;
+		} else if (action === ':') {
+			result = number1 / number2;
+		}
+
+		return `${result}`;
+	}
 }
+

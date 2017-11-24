@@ -6,3 +6,4 @@ $(function () {
 	const calculator = new Calculator();
 	calculator.initialize();
 });
+import $ from 'jquery';
