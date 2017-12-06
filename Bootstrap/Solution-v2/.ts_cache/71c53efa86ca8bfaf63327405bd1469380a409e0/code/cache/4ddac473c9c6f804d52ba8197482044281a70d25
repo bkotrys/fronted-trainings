@@ -1,0 +1,1 @@
+{"code":"import './../scss/styles.scss';\r\n//# sourceMappingURL=app.js.map","map":{"version":3,"file":"app.js","sourceRoot":"","sources":["app.ts"],"names":[],"mappings":"AAAA,OAAO,uBAAuB,CAAC"},"dts":{"name":"F:\\Programowanie\\Frontend-Workspace\\fronted-trainings\\Bootstrap\\Solution-v2/src/js/app.d.ts","text":"import './../scss/styles.scss';\r\n"}}
