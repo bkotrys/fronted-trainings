@@ -40,5 +40,9 @@ export default {
   dest: `build/${bundleFileName}.js`,
   format: 'umd',
   sourceMap: true,
+  globals: {
+    jquery: 'window.jQuery',
+  },
+  external: ['jquery'],
   plugins,
 };
