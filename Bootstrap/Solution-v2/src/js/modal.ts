@@ -8,10 +8,12 @@ const SELECTORS = {
 export default class Modal {
   modalContainer: JQuery<HTMLElement>;
   title: string;
-  
-  constructor(selector: string, title: string = '') {
+  handleSave: (event: JQuery.Event<HTMLElement, null>, param: any) => any;
+
+  constructor(selector: string, title: string = '', handleSave: () => any) {
     this.modalContainer = $(selector);
     this.title = title;
+    this.handleSave = handleSave;
     this.initialize();
   }
 
@@ -34,12 +36,12 @@ export default class Modal {
     console.log('modal is open');
   }
 
-  onSave(event: JQuery.Event<HTMLElement, null>) { 
+  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any) { 
     this.modalContainer.modal('hide');
     this.modalContainer.find('input').val('');
-    console.log(event);
+    this.handleSave(event, data);
   }
-
+  
   addTitle() {
     if (this.title.length) {
       this.modalContainer.find(SELECTORS.TITLE).text(this.title);

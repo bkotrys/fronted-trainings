@@ -1,9 +1,8 @@
 import Modal from './modal';
 
 export default class FormModal extends Modal {
-  handleSave: (param: any) => any;
   constructor(selector: string, title: string, onModalSave: () => any) {
-    super(selector, title);
+    super(selector, title, onModalSave);
     this.handleSave = onModalSave;
   }
 
@@ -13,8 +12,8 @@ export default class FormModal extends Modal {
   }
 
   onSave(event: JQuery.Event<HTMLElement, null>) {
-    this.handleSave(this.getFormData());
-    super.onSave(event);
+    const data = this.getFormData();
+    super.onSave(event, data);
   }
 
   getFormData() {
@@ -31,6 +30,7 @@ export default class FormModal extends Modal {
     }, {});
   }
 }
+
 
 // https://medium.com/dailyjs/rewriting-javascript-converting-an-array-of-objects-to-an-object-ec579cafbfc7
 // https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types
