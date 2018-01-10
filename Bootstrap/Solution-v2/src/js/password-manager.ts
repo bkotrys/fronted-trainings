@@ -30,13 +30,16 @@ export default class PasswordManager {
   }
 
   onAdd(event: JQuery.Event<HTMLElement, null >, data: any) {
-    const $tr = this.createRow(data)
+    const $tr = this.createRow(data);
     this.$tableContent.append($tr);
   }
 
   onDelete() {
-    console.log('usuwanie');
-    console.log(event);
+    console.log('delete');
+  }
+
+  onEdit(data: any) {
+    console.log(data);
   }
 
   createRow(data: any) {
@@ -66,9 +69,5 @@ export default class PasswordManager {
         'data-target': targetModalId,
       })
       .append($span);;
-  }
-
-  onEdit(data: any) {
-    console.log(data);
   }
 }

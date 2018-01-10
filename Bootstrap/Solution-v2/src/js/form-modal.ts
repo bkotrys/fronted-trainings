@@ -6,8 +6,8 @@ export default class FormModal extends Modal {
     this.handleSave = onModalSave;
   }
 
-  onShow() {
-    super.onShow();
+  onShow(event: JQuery.Event<HTMLElement, null>) {
+    super.onShow(event);
     console.log('form modal is open');
   }
 

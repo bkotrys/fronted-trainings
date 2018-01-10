@@ -27,19 +27,22 @@ export default class Modal {
   }
 
   registerEvents() {
-    this.modalContainer.on('shown.bs.modal', (event) => this.onShow()); 
-    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this))
+    this.modalContainer.on('shown.bs.modal', this.onShow.bind(this));
   }
 
-  onShow() {
+  onShow(event: JQuery.Event<HTMLElement, null>) {
     this.focusFirstInput();
     console.log('modal is open');
+    //const clickedBtn = event.relatedTarget;
+    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this));
+    console.log(event);
   }
 
-  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any) { 
+  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any) {
     this.modalContainer.modal('hide');
     this.modalContainer.find('input').val('');
     this.handleSave(event, data);
+    //console.log(event.relatedTarget);
   }
   
   addTitle() {
