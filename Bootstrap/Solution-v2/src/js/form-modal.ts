@@ -13,7 +13,7 @@ export default class FormModal extends Modal {
 
   onSave(event: JQuery.Event<HTMLElement, null>) {
     const data = this.getFormData();
-    super.onSave(event, data);
+    super.onSave(event, data, event);
   }
 
   getFormData() {

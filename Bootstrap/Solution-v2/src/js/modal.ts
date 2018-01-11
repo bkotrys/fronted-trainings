@@ -8,7 +8,7 @@ const SELECTORS = {
 export default class Modal {
   modalContainer: JQuery<HTMLElement>;
   title: string;
-  handleSave: (event: JQuery.Event<HTMLElement, null>, param: any) => any;
+  handleSave: (event: JQuery.Event<HTMLElement, null>, param: any, relatedTarget: JQuery.Event<HTMLElement, null>) => any;
 
   constructor(selector: string, title: string = '', handleSave: () => any) {
     this.modalContainer = $(selector);
@@ -33,16 +33,14 @@ export default class Modal {
   onShow(event: JQuery.Event<HTMLElement, null>) {
     this.focusFirstInput();
     console.log('modal is open');
-    //const clickedBtn = event.relatedTarget;
-    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this));
-    console.log(event);
+    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this, event.relatedTarget));
   }
 
-  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any) {
+  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any, relatedTarget: JQuery.Event<HTMLElement, null>) {
     this.modalContainer.modal('hide');
     this.modalContainer.find('input').val('');
-    this.handleSave(event, data);
-    //console.log(event.relatedTarget);
+    this.handleSave(event, data, relatedTarget);
+    console.log(relatedTarget);
   }
   
   addTitle() {

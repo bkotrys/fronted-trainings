@@ -29,16 +29,16 @@ export default class PasswordManager {
     this.deletePasswordModal = new Modal(SELECTORS.DELETE_PASSWORD_MODAL, 'Delete password', this.onDelete.bind(this));
   }
 
-  onAdd(event: JQuery.Event<HTMLElement, null >, data: any) {
+  onAdd(event: JQuery.Event<HTMLElement, null >, data: any, relatedTarget: any) {
     const $tr = this.createRow(data);
     this.$tableContent.append($tr);
   }
 
-  onDelete() {
+  onDelete(event: JQuery.Event<HTMLElement, null >, data: any, relatedTarget: any) {
     console.log('delete');
   }
 
-  onEdit(data: any) {
+  onEdit(event: JQuery.Event<HTMLElement, null >, data: any, relatedTarget: any) {
     console.log(data);
   }
 
