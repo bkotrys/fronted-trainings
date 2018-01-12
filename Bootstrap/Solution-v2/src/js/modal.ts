@@ -33,15 +33,19 @@ export default class Modal {
   onShow(event: JQuery.Event<HTMLElement, null>) {
     this.focusFirstInput();
     console.log('modal is open');
-    //const clickedBtn = event.relatedTarget;
-    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this));
+    const nativeBtn = event.relatedTarget;
+    this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this, nativeBtn));
+
+    // this.modalContainer.find(SELECTORS.SAVE_BUTTON).on('click', this.onSave.bind(this, event.relatedTarget));
     console.log(event);
   }
 
-  onSave(event: JQuery.Event<HTMLElement, null>, data: () => any) {
+  // tutaj dodaj nowy parametr: np relatedTarget
+  onSave(nativeBtn: any, event: JQuery.Event<HTMLElement, null>, data: () => any) {
     this.modalContainer.modal('hide');
     this.modalContainer.find('input').val('');
     this.handleSave(event, data);
+    console.log(nativeBtn);
     //console.log(event.relatedTarget);
   }
   

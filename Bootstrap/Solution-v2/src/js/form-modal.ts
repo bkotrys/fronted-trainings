@@ -11,9 +11,10 @@ export default class FormModal extends Modal {
     console.log('form modal is open');
   }
 
-  onSave(event: JQuery.Event<HTMLElement, null>) {
+  onSave(nativeBtn: any, event: JQuery.Event<HTMLElement, null>) {
+    console.log(event, 'event');
     const data = this.getFormData();
-    super.onSave(event, data);
+    super.onSave(nativeBtn, event, data);
   }
 
   getFormData() {
