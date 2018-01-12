@@ -8,7 +8,7 @@ const SELECTORS = {
 export default class Modal {
   modalContainer: JQuery<HTMLElement>;
   title: string;
-  handleSave: (event: JQuery.Event<HTMLElement, null>, param: any) => any;
+  handleSave: (event: JQuery.Event<HTMLElement, null>, param: any, relatedTarget: JQuery.Event<HTMLElement, null>) => any;
 
   constructor(selector: string, title: string = '', handleSave: () => any) {
     this.modalContainer = $(selector);
@@ -44,7 +44,7 @@ export default class Modal {
   onSave(nativeBtn: any, event: JQuery.Event<HTMLElement, null>, data: () => any) {
     this.modalContainer.modal('hide');
     this.modalContainer.find('input').val('');
-    this.handleSave(event, data);
+    this.handleSave(event, data, nativeBtn);
     console.log(nativeBtn);
     //console.log(event.relatedTarget);
   }
