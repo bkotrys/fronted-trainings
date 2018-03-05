@@ -1,30 +1,37 @@
 import React, { Component } from 'react';
 import ElementList from './ElementList.js';
+import DoneList from './DoneList.js';
 
 class Todo extends Component {
   constructor(props) {
     super(props);
     this.state = {
       todos: [],
-      term: ''
+      term: '',
+      done: []
     }
   }
 
-  doneElement = (event) => {
-    console.log('Done button test');
-    console.log(event);
+  doneElement = (index) => {
+    this.setState({done: [...this.state.done, this.state.todos[index]]});
   }
 
   editElement = (event) => {
     console.log('Edit button test');
-    console.log(event);
   }
 
-  deleteElement = (index) => {
-    this.state.todos.splice(index, 1);
-    this.setState({
-      todos: this.state.todos
-    });
+  deleteElement = (index, list) => {
+    if (list === 'todo') {
+      this.state.todos.splice(index, 1);
+      this.setState({
+        todos: this.state.todos
+      });
+    } else if (list === 'done') {
+      this.state.done.splice(index, 1);
+      this.setState({
+        done: this.state.done
+      });
+    }
   }
 
   addElement(event) {
@@ -48,14 +55,22 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <h1>Todo list test</h1>
-        <form>
-          <input type="text" value={this.state.term} onChange={this.handleChange} />
-          <button onClick={this.onSubmit}>Submit</button>
-        </form>
-        <ul>
-          {this.state.todos.map((element, index) => <ElementList index={index} element={element} deleteElement={this.deleteElement} />)}
-        </ul>
+        <section>
+          <h1>TODO</h1>
+          <form>
+            <input type="text" placeholder="What do you have to do?" value={this.state.term} onChange={this.handleChange} />
+            <button onClick={this.onSubmit}>Submit</button>
+          </form>
+          <ul>
+            {this.state.todos.map((element, index) => <ElementList index={index} element={element} deleteElement={this.deleteElement} doneElement={this.doneElement} />)}
+          </ul>
+        </section>
+        <section>
+          <h1>DONE</h1>
+          <ul>
+            {this.state.done.map((element, index) => <DoneList index={index} element={element} deleteElement={this.deleteElement} />)}
+          </ul>
+        </section>
       </div>
     );
   }

@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 
 class ElementList extends Component {
 	onDelete = () => {
-		this.props.deleteElement(this.props.index);
+		this.props.deleteElement(this.props.index, 'todo');
+	}
+
+	onDone = () => {
+		this.props.doneElement(this.props.index);
+		this.props.deleteElement(this.props.index, 'todo');
 	}
 
 	render() {
