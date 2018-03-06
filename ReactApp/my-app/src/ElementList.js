@@ -8,9 +8,9 @@ class ElementList extends Component {
 	render() {
 		return(
 			<li>
-        <input type="text" value={this.props.element} onChange={this.handleChange} />
+        <input type="text" placeholder="Content deleted" value={this.props.element} onChange={this.handleChange} />
         <button onClick={() => {
-        	this.props.doneElement(this.props.index);
+        	this.props.doneElement(this.props.index, this.props.element);
 					this.props.deleteElement(this.props.index, 'todo');
         }}>Done</button>
         <button onClick={() => {
