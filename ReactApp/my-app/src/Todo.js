@@ -12,12 +12,8 @@ class Todo extends Component {
     }
   }
 
-  doneElement = (index, value) => {
-    if (value==='') {
-      this.setState({done: [...this.state.done, 'Content deleted']});
-    } else {
-      this.setState({done: [...this.state.done, this.state.todos[index]]});
-    }
+  doneElement = (index) => {
+    this.setState({done: [...this.state.done, this.state.todos[index]]});
   }
 
   editElement = (index, value) => {

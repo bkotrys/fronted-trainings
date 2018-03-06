@@ -4,7 +4,7 @@ class DoneList extends Component {
 	render() {
 		return(
 			<li>
-        <p>{this.props.element}</p>
+				<input type="text" placeholder="Empty" value={this.props.element} disabled />
         <button onClick={() => {
         	this.props.deleteElement(this.props.index, 'done');
         }}>Delete</button>
