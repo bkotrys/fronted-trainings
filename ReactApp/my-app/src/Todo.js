@@ -16,10 +16,12 @@ class Todo extends Component {
     this.setState({done: [...this.state.done, this.state.todos[index]]});
   }
 
-  editElement = (index) => {
-    console.log('EDIT');
-    console.log('Index of edited element:');
-    console.log(index);
+  editElement = (index, value) => {
+    let arr = this.state.todos;
+    arr[index] = value;
+    this.setState({
+      todos: arr
+    });
   }
 
   deleteElement = (index, list) => {
@@ -64,13 +66,23 @@ class Todo extends Component {
             <button onClick={this.onSubmit}>Submit</button>
           </form>
           <ul>
-            {this.state.todos.map((element, index) => <ElementList index={index} element={element} deleteElement={this.deleteElement} doneElement={this.doneElement} editElement={this.editElement} />)}
+            {this.state.todos.map((element, index) => <ElementList
+              index={index}
+              element={element}
+              deleteElement={this.deleteElement}
+              doneElement={this.doneElement}
+              editElement={this.editElement}
+            />)}
           </ul>
         </section>
         <section>
           <h1>DONE</h1>
           <ul>
-            {this.state.done.map((element, index) => <DoneList index={index} element={element} deleteElement={this.deleteElement} />)}
+            {this.state.done.map((element, index) => <DoneList
+              index={index}
+              element={element}
+              deleteElement={this.deleteElement}
+            />)}
           </ul>
         </section>
       </div>
