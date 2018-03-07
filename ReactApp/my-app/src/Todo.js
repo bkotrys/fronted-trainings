@@ -59,7 +59,7 @@ class Todo extends Component {
   render() {
     return (
       <div>
-        <section>
+        <section className="todo-section">
           <h1>TODO</h1>
           <form>
             <input type="text" placeholder="What do you have to do?" value={this.state.term} onChange={this.handleChange} />
@@ -75,7 +75,7 @@ class Todo extends Component {
             />)}
           </ul>
         </section>
-        <section>
+        <section className="done-section">
           <h1>DONE</h1>
           <ul>
             {this.state.done.map((element, index) => <DoneList
