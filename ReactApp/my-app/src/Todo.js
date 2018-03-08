@@ -47,7 +47,10 @@ class Todo extends Component {
 
   onSubmit = (event) => {
     event.preventDefault();
-    this.addElement();
+    
+    if(this.state.term) {
+      this.addElement();
+    }
   }
 
   handleChange = (event) => {
@@ -66,23 +69,29 @@ class Todo extends Component {
             <button onClick={this.onSubmit}>Submit</button>
           </form>
           <ul>
-            {this.state.todos.map((element, index) => <ElementList
-              index={index}
-              element={element}
-              deleteElement={this.deleteElement}
-              doneElement={this.doneElement}
-              editElement={this.editElement}
-            />)}
+            {this.state.todos.map((element, index) => (
+              <ElementList
+                index={index}
+                key={index}
+                element={element}
+                onDelete={this.deleteElement}
+                onDone={this.doneElement}
+                onEdit={this.editElement}
+              />))
+            }
           </ul>
         </section>
         <section className="done-section">
           <h1>DONE</h1>
           <ul>
-            {this.state.done.map((element, index) => <DoneList
-              index={index}
-              element={element}
-              deleteElement={this.deleteElement}
-            />)}
+            {this.state.done.map((element, index) => (
+              <DoneList
+                index={index}
+                key={index}
+                element={element}
+                deleteElement={this.deleteElement}
+              />))
+            }
           </ul>
         </section>
       </div>
