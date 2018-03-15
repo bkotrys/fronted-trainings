@@ -1,6 +1,6 @@
 // https://reactjs.org/docs/conditional-rendering.html
 import React, { Component } from 'react';
-
+import { Todo } from './styles';
 class SingleTodo extends Component {
 	constructor(props) {
 		super(props);
@@ -38,7 +38,7 @@ class SingleTodo extends Component {
 
 	render() {
 		return(
-			<li>
+			<Todo>
 				{
 					!this.state.isEditMode ? 
 						(
@@ -64,7 +64,7 @@ class SingleTodo extends Component {
 			
 				<button onClick={this.handleDone}>Done</button>
 				<button onClick={this.handleDelete}>Delete</button>
-			</li>
+			</Todo>
 		);
 	}
 }
